@@ -1,0 +1,83 @@
+---
+permalink: online-help/reference-backup-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: La boîte de dialogue Paramètres de sauvegarde permet de configurer les paramètres des sauvegardes MySQL et NetApp Snapshot. En fonction de la sauvegarde configurée, les champs associés apparaissent dans la boîte de dialogue Paramètres de sauvegarde. Pour une sauvegarde de base de données MySQL, vous pouvez définir le programme de sauvegarde, le nombre de rétention et le chemin de sauvegarde pour une instance Active IQ Unified Manager sélectionnée. 
+---
+= Boîte de dialogue Paramètres de sauvegarde
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Paramètres de sauvegarde permet de configurer les paramètres des sauvegardes MySQL et NetApp Snapshot. En fonction de la sauvegarde configurée, les champs associés apparaissent dans la boîte de dialogue Paramètres de sauvegarde. Pour une sauvegarde de base de données MySQL, vous pouvez définir le programme de sauvegarde, le nombre de rétention et le chemin de sauvegarde pour une instance Active IQ Unified Manager sélectionnée.
+
+Vous pouvez modifier les paramètres de sauvegarde suivants de la base de données :
+
+* *CLUSTER*
++
+Vous devez fournir le IP de gestion du cluster du système de stockage sur lequel les données Unified Manager seront hébergées.
+
+* *VOLUME*
++
+Vous devez fournir le nom du volume qui contient la LUN dédiée afin d'héberger les données Unified Manager.
+
+* *VM DE STOCKAGE*
++
+Vous devez fournir le nom de la machine virtuelle de stockage où se trouve le volume, contenant le LUN dédié pour héberger les données Unified Manager.
+
+* *LUN*
++
+Vous devez indiquer le nom de la LUN où sont hébergées les données Unified Manager lors d'une sauvegarde du type de Snapshot NetApp.
+
+* *CHEMIN DE MONTAGE*
++
+Lorsque vous utilisez la méthode de sauvegarde de vidage de la base de données MySQL, ce champ indique le chemin d'accès à l'emplacement où vous stockez les fichiers de sauvegarde. Cet emplacement indique le cluster, la machine virtuelle de stockage et le volume sur lequel la sauvegarde est stockée.
+
++
+Le tableau suivant indique le format du chemin de sauvegarde et les emplacements par défaut pour différents systèmes d'exploitation :
+
++
+[cols="2*"]
+|===
+| Système d'exploitation hôte | Format du chemin de sauvegarde 
+
+
+ a| 
+Appliance virtuelle
+ a| 
+`/opt/netapp/data/ocum-backup`
+
+
+
+ a| 
+Red Hat Enterprise Linux ou CentOS Linux
+ a| 
+`/data/ocum-backup`
+
+
+
+ a| 
+Microsoft Windows
+ a| 
+Dans le cas de Windows, vous devrez fournir le chemin de montage. Par exemple, si le chemin de montage est un lecteur "D", vous devez indiquer le chemin de montage en tant que `D:`
+
+|===
+* *NOMBRE DE RÉTENTION*
++
+Spécifie le nombre maximal de sauvegardes à conserver par Unified Manager. La valeur par défaut est 10.
+
+* *Quotidien planifié*
++
+Spécifie le planning de sauvegarde quotidien avec l'heure.
+
+* *Hebdomadaire planifié*
++
+Spécifie le programme de sauvegarde hebdomadaire avec le jour et l'heure.
+
+* *Aucun*
++
+Spécifie qu'aucune sauvegarde ne sera créée.
+
+

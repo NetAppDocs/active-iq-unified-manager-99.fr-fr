@@ -1,0 +1,14 @@
+---
+permalink: reporting/concept-customizing-qtree-capacity-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Ces exemples de rapports personnalisés sont utilisés pour vous aider à identifier les problèmes potentiels liés à la capacité de qtree et à y répondre. 
+---
+= Personnalisation des rapports de capacité qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ces exemples de rapports personnalisés sont utilisés pour vous aider à identifier les problèmes potentiels liés à la capacité de qtree et à y répondre.

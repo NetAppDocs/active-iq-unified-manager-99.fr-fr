@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-dashboard-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La page Tableau de bord comporte des « panneaux » qui indiquent le niveau élevé de capacité, de performances et de sécurité des clusters que vous surveillez. Cette page fournit également un panneau actions de gestion qui répertorie les correctifs que Unified Manager peut apporter pour résoudre certains événements. 
+---
+= Page de tableau de bord
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page Tableau de bord comporte des « panneaux » qui indiquent le niveau élevé de capacité, de performances et de sécurité des clusters que vous surveillez. Cette page fournit également un panneau actions de gestion qui répertorie les correctifs que Unified Manager peut apporter pour résoudre certains événements.
+
+La plupart des panneaux affichent également le nombre d'événements actifs dans cette catégorie et le nombre de nouveaux événements ajoutés au cours des 24 heures précédentes. Ces informations vous aident à décider des clusters que vous devrez analyser davantage pour résoudre les événements. Un clic sur les événements affiche les principaux événements et fournit un lien vers la page d'inventaire Event Management filtrée pour afficher les événements actifs dans cette catégorie.
+
+En haut du tableau de bord, vous pouvez indiquer si les panneaux affichent des informations pour tous les clusters surveillés (« tous les clusters ») ou pour un cluster individuel. Vous pouvez commencer par afficher l'état de tous les clusters, puis accéder à des informations détaillées vers chacun d'eux lorsque vous le souhaitez.
+
+[NOTE]
+====
+Certains des panneaux répertoriés ci-dessous n'apparaîtront pas sur la page en fonction de votre configuration.
+
+====
+* *Panneau actions de gestion*
++
+Unified Manager effectue un diagnostic approfondi et permet sa résolution unique. Lorsqu'elles sont disponibles, ces résolutions sont affichées dans ce panneau avec un bouton *Fix it* ou *Fix All*. Vous pouvez corriger ces problèmes immédiatement à partir d'Unified Manager au lieu d'utiliser ONTAP System Manager ou l'interface de ligne de commande de ONTAP. Pour afficher tous les problèmes, cliquez sur
+
++
+Voir link:concept-fixing-ontap-issues-directly-from-unified-manager.html["Résolution des problèmes ONTAP directement dans Unified Manager"] pour en savoir plus.
+
+* *Panneau de capacité*
++
+Lorsque vous affichez l'ensemble des clusters, ce panneau affiche la capacité physique utilisée (après application des gains d'efficacité du stockage) et la capacité physique disponible (y compris les gains potentiels en termes d'efficacité du stockage) pour chaque cluster, le nombre de jours précédant la saturation des disques, Et le taux de réduction des données selon les paramètres d'efficacité du stockage ONTAP configurés. Elle répertorie également la capacité utilisée pour tous les niveaux cloud configurés. Cliquez sur le graphique à barres pour accéder à la page d'inventaire des agrégats correspondant à ce cluster. En cliquant sur le texte "Days to Full", un message identifie l'agrégat avec le moins de jours de capacité restant ; cliquez sur le nom de l'agrégat pour en savoir plus.
+
++
+Lorsque vous affichez un seul cluster, ce panneau affiche la capacité physique utilisée et la capacité physique disponible pour les agrégats de données, triés par type de disque individuel sur le niveau local et pour le niveau cloud. En cliquant sur le graphique à barres d'un type de disque, vous accédez à la page d'inventaire des volumes pour les volumes utilisant ce type de disque.
+
+* *Panneau capacité de performance*
++
+Lorsque vous affichez tous les clusters, ce panneau affiche la valeur de capacité des performances pour chaque cluster (moyenne sur l'heure précédente) et le nombre de jours jusqu'à ce que la capacité des performances atteigne la limite supérieure (basée sur le taux de croissance quotidien). Cliquez sur le graphique à barres pour accéder à la page d'inventaire des nœuds de ce cluster. Notez que la page d'inventaire des nœuds affiche la capacité de performance moyenne sur les 72 heures précédentes. En cliquant sur le texte « essais en plein », un message identifie le nœud avec le moins de jours de capacité de performances restants ; cliquez sur le nom du nœud pour en savoir plus.
+
++
+Lorsque vous affichez un seul cluster, ce panneau affiche les valeurs relatives à la capacité de performance du cluster utilisée : pourcentage, IOPS totales et débit total (Mbit/s), ainsi que le nombre de jours jusqu'à ce que chacune de ces trois mesures atteigne sa limite supérieure.
+
+* *Panneau d'IOPS de charge de travail*
++
+Lorsque vous affichez un seul cluster, ce volet affiche le nombre total de charges de travail actuellement exécutées dans une certaine plage d'opérations d'E/S par seconde. Il indique le nombre de chaque type de disque lorsque vous positionnez le curseur de votre souris sur le graphique.
+
+* *Panneau performances de la charge de travail*
++
+Ce volet affiche le nombre total de charges de travail conformes et non conformes affectées à chaque politique de niveau de service de performance (PSL). Elle affiche également le nombre de charges de travail qui ne sont pas affectées à un PSL. Dans un graphique à barres, vous accédez aux charges de travail conformes attribuées à cette règle sur la page des charges de travail. Cliquez sur le nombre qui suit le graphique à barres pour accéder aux charges de travail conformes et non conformes attribuées à cette règle.
+
+* *Panneau de sécurité*
++
+Lors de l'affichage de tous les clusters, ce panneau affiche le nombre de clusters conformes et non conformes, le nombre de machines virtuelles de stockage conformes et non conformes, ainsi que le nombre de volumes chiffrés et non chiffrés. La conformité dépend du http://www.netapp.com/us/media/tr-4569.pdf["Guide NetApp sur le renforcement de la sécurité des environnements ONTAP 9"]. Cliquez sur la flèche droite en haut du panneau pour afficher les détails de sécurité de tous les clusters de la page sécurité.
+
++
+Lors de l'affichage d'un cluster unique, ce panneau indique si le cluster est conforme ou non, le nombre de machines virtuelles de stockage conformes et non conformes, ainsi que le nombre de volumes chiffrés et non chiffrés. Cliquez sur la flèche droite en haut du panneau pour afficher les détails de sécurité du cluster dans la page sécurité.
+
+* *Panneau vue d'ensemble de l'utilisation*
++
+Lorsque vous affichez tous les clusters, vous pouvez choisir d'afficher les clusters triés par ordre d'IOPS, de débit le plus élevé (Mbit/s) ou de capacité physique la plus élevée utilisée.
+
++
+Lorsque vous affichez un seul cluster, vous pouvez choisir d'afficher les charges de travail triées par IOPS plus élevées, par débit (Mbit/s) ou par capacité logique la plus élevée utilisée.
+
+

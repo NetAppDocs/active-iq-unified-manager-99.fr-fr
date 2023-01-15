@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-performance-all-nodes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vue performances : tous les nœuds affiche un aperçu des événements de performance, des données et des informations de configuration pour chaque nœud contrôlé par une instance de Unified Manager. Vous pouvez ainsi surveiller rapidement les performances de vos nœuds et résoudre les problèmes de performances et les seuils.' 
+---
+= Performance : vue de tous les nœuds
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vue performances : tous les nœuds affiche un aperçu des événements de performance, des données et des informations de configuration pour chaque nœud contrôlé par une instance de Unified Manager. Vous pouvez ainsi surveiller rapidement les performances de vos nœuds et résoudre les problèmes de performances et les seuils.
+
+Par défaut, les objets des pages de vue sont triés en fonction de la criticité de l'événement. Les objets avec des événements critiques sont répertoriés en premier et les objets avec des événements d'avertissement sont répertoriés en second. Cela fournit une indication visuelle immédiate des problèmes à résoudre.
+
+Les commandes situées en haut de la page vous permettent de sélectionner une vue particulière (pour l'intégrité, les performances, la capacité, etc.), d'effectuer des recherches pour localiser des objets spécifiques, de créer et d'appliquer des filtres pour restreindre la liste des données affichées, ajouter/supprimer/réorganiser des colonnes sur la page, et exportez les données de la page vers un `.csv`, `.pdf`, ou `.xlsx` fichier. Après avoir personnalisé la page, vous pouvez enregistrer les résultats sous forme de vue personnalisée, puis planifier régulièrement un rapport de ces données à générer et à envoyer par e-mail.
+
+Dans le menu *Rapports*, l'option *Rapport d'inventaire du matériel* est disponible lorsque Unified Manager et les clusters qu'il gère sont installés sur un site sans connectivité réseau externe. Ce bouton génère un `.csv` fichier qui contient une liste complète d'informations sur le cluster et le nœud, notamment les numéros de modèle du matériel et les numéros de série, les types et le nombre de disques, les licences installées, etc. Cette fonctionnalité de reporting est utile pour le renouvellement de contrats dans des sites sécurisés qui ne sont pas connectés à la plateforme NetAppActive IQ.
+
+Vous pouvez affecter des stratégies de seuil de performances à ou effacer des stratégies de seuil à partir de n'importe quel objet sur les pages d'inventaire des objets à l'aide des boutons *affecter la stratégie de seuil de performances* et *Effacer la stratégie de seuil de performances*.
+
+Voir xref:reference-node-performance-fields.adoc[Champs de performance des nœuds] pour la description de tous les champs de cette page.

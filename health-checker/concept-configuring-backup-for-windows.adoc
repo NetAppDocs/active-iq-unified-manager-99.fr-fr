@@ -1,0 +1,22 @@
+---
+permalink: health-checker/concept-configuring-backup-for-windows.html 
+sidebar: sidebar 
+keywords: backup and restore on Windows,NetApp Snapshot 
+summary: 'Active IQ Unified Manager prend en charge les sauvegardes et les restaurations à l"aide de snapshots NetApp sur le système d"exploitation Windows à l"aide du protocole iSCSI.' 
+---
+= Configuration de la sauvegarde sous Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager prend en charge les sauvegardes et les restaurations à l'aide de snapshots NetApp sur le système d'exploitation Windows à l'aide du protocole iSCSI.
+
+Une sauvegarde basée sur un snapshot peut être effectuée pendant que tous les services MU sont en cours d'exécution. Un état cohérent de la base de données est capturé dans le cadre de la copie Snapshot, tandis que la sauvegarde place un verrouillage de lecture global sur l'ensemble de la base de données, ce qui empêche toute écriture simultanée. Pour que votre système Unified Manager soit installé sur le système d'exploitation Windows pour effectuer des sauvegardes et des restaurations à l'aide des snapshots NetApp, vous devez d'abord configurer la sauvegarde Unified Manager sur des copies Snapshot à l'aide de la console de maintenance.
+
+Avant de configurer votre installation Active IQ Unified Manager pour la sauvegarde Snapshot, vous devez effectuer les tâches de configuration suivantes.
+
+* Configurez le cluster ONTAP
+* Configurer la machine hôte Windows
+

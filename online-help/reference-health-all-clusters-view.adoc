@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-health-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vue Santé : tous les clusters permet d"afficher les informations d"état des clusters que vous surveillez.' 
+---
+= Santé : vue de tous les clusters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vue Santé : tous les clusters permet d'afficher les informations d'état des clusters que vous surveillez.
+
+Par défaut, les objets des pages de vue sont triés en fonction de la criticité de l'événement. Les objets avec des événements critiques sont répertoriés en premier et les objets avec des événements d'avertissement sont répertoriés en second. Cela fournit une indication visuelle immédiate des problèmes à résoudre. Chaque cluster de la grille des clusters possède des liens vers ONTAP System Manager. Ce lien vous redirige vers ONTAP System Manager afin d'afficher les mêmes relations de protection. L'option de menu *Affichage dans System Manager* est disponible sous la forme d'un lien. Le lien *View dans System Manager* est également disponible dans la page détaillée d'état de santé, de performances et de capacité du cluster.
+
+Les commandes situées en haut de la page vous permettent de sélectionner une vue particulière (pour l'intégrité, les performances, la capacité, etc.), d'effectuer des recherches pour localiser des objets spécifiques, de créer et d'appliquer des filtres pour restreindre la liste des données affichées, ajouter/supprimer/réorganiser des colonnes sur la page, et exportez les données de la page vers un `.csv`, `.pdf`, ou `.xlsx` fichier. Après avoir personnalisé la page, vous pouvez enregistrer les résultats sous forme de vue personnalisée, puis planifier régulièrement un rapport de ces données à générer et à envoyer par e-mail.
+
+Vous pouvez utiliser le bouton *Cluster Setup* pour modifier ou ajouter des clusters à Active IQ Unified Manager. Tous les clusters disponibles dans Active IQ Unified Manager sont répertoriés et chaque lien du nom du cluster permet d'accéder à la page ONTAP System Manager pour faciliter la navigation.
+
+Vous pouvez associer un cluster à une annotation prédéfinie en utilisant le bouton *Annotate*.
+
+Voir xref:reference-cluster-health-fields.adoc[Champs de santé du cluster] pour la description de tous les champs de cette page.

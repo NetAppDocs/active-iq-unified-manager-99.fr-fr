@@ -1,0 +1,32 @@
+---
+permalink: online-help/reference-configuring-ontap-cluster.html 
+sidebar: sidebar 
+keywords: NetApp Snapshot backup for Windows,configuring ONTAP cluster 
+summary: 'Avant de configurer Active IQ Unified Manager pour la sauvegarde et la restauration Snapshot pour Windows, il est conseillé d"effectuer quelques pré-configurations pour ONTAP et la machine hôte Windows.' 
+---
+= Configuration du cluster ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant de configurer Active IQ Unified Manager pour la sauvegarde et la restauration Snapshot pour Windows, il est conseillé d'effectuer quelques pré-configurations pour ONTAP et la machine hôte Windows.
+
+Vous pouvez configurer le cluster ONTAP à l'aide de l'invite de commandes ou de l'interface utilisateur de System Manager. La configuration du cluster ONTAP implique la configuration des LIFs de données à disponibilité à attribuer en tant que LIFs iSCSI à la VM de stockage. L'étape suivante consiste à configurer une machine virtuelle de stockage iSCSI à l'aide de l'interface utilisateur de System Manager. Vous devrez configurer une route réseau statique pour cette VM de stockage afin de contrôler la façon dont les LIF utilisent le réseau pour le trafic sortant.
+
+[NOTE]
+====
+Vous devez disposer d'un volume dédié et d'une LUN pour la configuration de sauvegarde. Le volume sélectionné ne doit inclure qu'une seule LUN. La taille de la LUN doit être au moins deux fois supérieure à la taille de données que les Active IQ Unified Manager devraient traiter.
+
+====
+Vous devez effectuer la configuration suivante :
+
+. Configurez une machine virtuelle de stockage compatible iSCSI ou utilisez une machine virtuelle de stockage existante dotée de la même configuration.
+. Configurer une route réseau pour la VM de stockage configurée
+. Configurez un volume de capacité appropriée et une LUN unique à l'intérieur, en veillant à ce que le volume soit dédié uniquement à cette LUN.
+. Configurez un groupe initiateur sur la machine virtuelle de stockage.
+. Configurez un ensemble de ports.
+. Intégrez le groupe initiateur avec l'ensemble de ports.
+. Mappez la LUN sur le groupe initiateur.
+

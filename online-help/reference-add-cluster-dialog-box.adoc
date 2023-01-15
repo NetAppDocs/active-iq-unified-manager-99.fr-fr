@@ -1,0 +1,34 @@
+---
+permalink: online-help/reference-add-cluster-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez ajouter un cluster existant afin de contrôler le cluster et d"obtenir des informations sur son état, sa capacité, sa configuration et ses performances.' 
+---
+= Boîte de dialogue Ajouter un cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter un cluster existant afin de contrôler le cluster et d'obtenir des informations sur son état, sa capacité, sa configuration et ses performances.
+
+Vous pouvez ajouter un cluster en spécifiant les valeurs suivantes :
+
+* *Nom d'hôte ou adresse IP*
++
+Permet de spécifier le nom d'hôte (privilégié) ou l'adresse IP (IPv4 ou IPv6) de la LIF de gestion du cluster utilisée pour se connecter au cluster. En spécifiant le nom d'hôte, vous pourrez faire correspondre le nom du cluster dans l'interface utilisateur Web, plutôt que de tenter de mettre en corrélation une adresse IP sur une page avec un nom d'hôte sur une autre page.
+
+* *Nom d'utilisateur*
++
+Permet de spécifier un nom d'utilisateur pouvant être utilisé pour vous connecter au cluster.
+
+* *Mot de passe*
++
+Vous permet de spécifier un mot de passe pour le nom d'utilisateur spécifié.
+
+* *Port*
++
+Permet de spécifier le numéro de port utilisé pour se connecter au cluster. Le port par défaut est 443 pour HTTPS.
+
+

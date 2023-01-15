@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-network-interface-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page Network interface/Performance Explorer fournit une vue d"ensemble détaillée des performances de toutes les interfaces réseau \(LIFs\) d"un cluster.' 
+---
+= Interface réseau/Explorateur de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page Network interface/Performance Explorer fournit une présentation détaillée des performances de toutes les interfaces réseau (LIF) d'un cluster.
+
+La page Network interface/Performance Explorer vous permet de suivre et de comparer les performances de l'interface réseau pendant une période donnée, ce qui vous aide à résoudre les problèmes et à régler les performances de votre interface réseau.
+
+La fonctionnalité View and compare permet de comparer les performances de cette interface réseau avec :
+
+* autres interfaces réseau qui sont sur le même port
+* Autres interfaces réseau qui se trouvent sur la même machine virtuelle de stockage
+* port sur lequel réside l'interface réseau
+* VM de stockage sur laquelle réside l'interface réseau
+
+
+La page Network interface/Performance Explorer vous permet d'effectuer les opérations suivantes :
+
+* Afficher les problèmes liés aux seuils et leurs détails
+* Suivez et comparez les données de performances de l'interface réseau
+* Examiner et résoudre les problèmes liés aux seuils
+* Examiner et résoudre les problèmes de performances
+

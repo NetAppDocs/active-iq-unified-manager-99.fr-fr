@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-deleting-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez supprimer les pairs de machines virtuelles de stockage pour les applications partenaires afin de supprimer la relation de provisionnement secondaire entre les machines virtuelles de stockage source et de destination. Par exemple, lorsque la machine virtuelle de stockage de destination est saturée et que vous souhaitez créer un nouveau poste de protection des machines virtuelles de stockage. 
+---
+= Suppression des pairs de machines virtuelles de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer les pairs de machines virtuelles de stockage pour les applications partenaires afin de supprimer la relation de provisionnement secondaire entre les machines virtuelles de stockage source et de destination. Par exemple, lorsque la machine virtuelle de stockage de destination est saturée et que vous souhaitez créer un nouveau poste de protection des machines virtuelles de stockage.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle Administrateur d'applications ou Administrateur de stockage.
+
+
+
+== Description de la tâche
+
+Le bouton *Supprimer* est désactivé jusqu'à ce qu'au moins un homologue de la VM de stockage soit sélectionné. La modification d'associations à l'aide des fonctions DELETE et create affecte uniquement les opérations de provisioning futures ; elle ne déplace pas les volumes de destination existants.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *protection* > *Storage VM pairs*.
+. Sélectionnez au moins un serveur virtuel de stockage homologue.
++
+Le bouton *Supprimer* est activé.
+
+. Cliquez sur *Supprimer.*
++
+Une boîte de dialogue d'avertissement s'affiche.
+
+. Cliquez sur *Oui* pour continuer.
++
+L'homologue de la VM de stockage sélectionné est supprimé de la liste.
+
+

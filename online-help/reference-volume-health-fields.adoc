@@ -1,0 +1,344 @@
+---
+permalink: online-help/reference-volume-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les champs suivants sont disponibles dans la vue Santé : tous les volumes et peuvent être utilisés dans des vues personnalisées et des rapports.' 
+---
+= Champs de contrôle du volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les champs suivants sont disponibles dans la vue Santé : tous les volumes et peuvent être utilisés dans des vues personnalisées et des rapports.
+
+* *Statut*
++
+État actuel d'un volume. Le statut peut être critique (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), erreur (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), Avertissement (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]) Ou Normal (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]).
+
+* *Volume*
++
+Nom du volume.
+
+* *VM de stockage*
++
+Le SVM qui contient le volume.
+
+* *État*
++
+L'état actuel du volume :
+
++
+** Hors ligne
++
+L'accès en lecture ou en écriture au volume n'est pas autorisé.
+
+** En ligne
++
+L'accès en lecture et en écriture au volume est autorisé.
+
+** Limitée
++
+Les opérations limitées, telles que la reconstruction de parité, sont autorisées, mais l'accès aux données n'est pas autorisé.
+
+** Mixte
++
+Les composants d'un volume FlexGroup ne sont pas tous du même état.
+
+
+
+* *Rôle de protection*
++
+Le rôle de protection d'un volume :
+
++
+** Non protégé
++
+Volume de lecture/écriture sans relations SnapMirror ou SnapVault entrantes ou sortantes
+
+** Protection
++
+Volume de lecture/écriture avec une relation SnapMirror ou SnapVault sortante
+
+** Destination
++
+Un volume DP ou un volume de lecture/écriture avec une relation SnapMirror ou SnapVault entrante
+
+** Sans objet
++
+Volume pour lequel les rôles de protection ne s'appliquent pas, tel qu'un volume de partage de charge, un composant de données ou un volume temporaire
+
+
+
++
+Cliquez sur le rôle pour afficher l'onglet protection de la page Détails du volume/intégrité.
+
+* *Protégé par*
++
+Type de protection utilisé pour le volume ; Storage VM DR, SnapMirror ou SnapMirror, Storage VM DR. Ce champ est masqué par défaut.
+
+* *Style*
++
+Style de volume : FlexVol ou FlexGroup.
+
+* *Chemin de montage*
++
+Chemin d'accès au volume.
+
+* *Données disponibles %*
++
+Pourcentage d'espace physique actuellement disponible pour les données dans le volume.
+
+* *Capacité de données disponible*
++
+Quantité d'espace physique actuellement disponible pour les données dans le volume.
+
+* *Données utilisées %*
++
+Le pourcentage d'espace physique utilisé par les données du volume en fonction de la capacité totale disponible des données.
+
+* *Capacité de données utilisée*
++
+Quantité d'espace physique utilisé par les données dans le volume.
+
+* *Capacité de données totale*
++
+Espace physique total disponible pour les données dans le volume.
+
+* *Rapport d'espace logique*
++
+Si le volume dispose de rapports d'espace logique configurés. La valeur peut être activée, désactivée ou non applicable.
+
++
+L'espace logique indique la taille réelle des données stockées sur le volume sans appliquer les économies obtenues grâce aux technologies d'efficacité du stockage de ONTAP.
+
+* *Espace logique utilisé %*
++
+Pourcentage d'espace logique utilisé par les données du volume en fonction de la capacité de données totale disponible.
+
+* *Espace logique utilisé*
++
+Espace logique utilisé par les données dans le volume.
+
+* *Statut de déplacement*
++
+État actuel de l'opération de déplacement de volume. L'état peut être en cours, en pause, en échec ou terminé.
+
+* *Type*
++
+Type de volume. Il peut s'agir de la lecture-écriture ou de la protection des données, du partage de charge ou du cache de données.
+
+* *Provisionnement fin*
++
+Indique si la garantie d'espace est définie pour le volume sélectionné. Les valeurs valides sont Oui et non
+
+* *Déduplication*
++
+Indique si la déduplication est activée sur le volume. La colonne affiche activé ou désactivé.
+
+* *Compression*
++
+Indique si la compression est activée sur le volume. La colonne affiche activé ou désactivé.
+
+* * En transition*
++
+Indique si le volume a terminé la transition ou non.
+
+* *Type SnapLock*
++
+Le type SnapLock de l'agrégat qui contient le volume. Les options disponibles sont Compliance, Enterprise, non SnapLock.
+
+* *Stratégie de snapshots locale*
++
+Les politiques locales de copies Snapshot pour les volumes répertoriés. Le nom de la stratégie par défaut est défini sur par défaut.
+
+* *Politique de hiérarchisation*
++
+La règle de Tiering définie sur le volume. La politique n'affecte que lorsque le volume est déployé sur un agrégat FabricPool :
+
++
+** Aucune : les données de ce volume restent toujours sur le Tier de performance.
+** Snapshot uniquement : seules les données Snapshot sont déplacées automatiquement vers le Tier cloud. Toutes les autres données restent sur le Tier de performance.
+** Sauvegarde : sur les volumes de protection des données, toutes les données utilisateur transférées commencent dans le Tier cloud, mais les lectures ultérieures des clients peuvent déplacer les données fortement sollicitées vers le Tier de performance.
+** Auto : les données de ce volume sont automatiquement déplacées entre le Tier de performance et le Tier cloud lorsque ONTAP détermine que les données sont « actives » ou « inactives ».
+** Toutes : les données de ce volume restent sur le Tier cloud.
+
+
+* *Politique de mise en cache*
++
+Stratégie de mise en cache associée au volume sélectionné. La politique fournit des informations sur la mise en cache de Flash Pool pour le volume.
+
+
+
+[cols="2*"]
+|===
+| Règle de cache | Description 
+
+
+ a| 
+Auto
+ a| 
+La lecture met en cache tous les blocs de métadonnées et lit de façon aléatoire les blocs de données utilisateur. En outre, elle met en cache tous les blocs de données utilisateur remplacés de manière aléatoire.
+
+
+
+ a| 
+Aucune
+ a| 
+Ne met en cache aucun bloc de métadonnées ou de données utilisateur.
+
+
+
+ a| 
+Tout
+ a| 
+En lecture met en cache tous les blocs de données utilisateur qui sont lus et écrits. La règle n'exécute pas de mise en cache d'écriture.
+
+
+
+ a| 
+Écriture 100 % aléatoire
+ a| 
+Cette règle est une combinaison des règles d'écriture aléatoire et toutes les règles d'écriture aléatoire et effectue les opérations suivantes :
+
+* En lecture met en cache tous les blocs de données utilisateur qui sont lus et écrits.
+* L'écriture met en cache tous les blocs de données utilisateur écrasés de façon aléatoire.
+
+
+
+
+ a| 
+Tous lus
+ a| 
+En lecture, toutes les métadonnées sont caches, lecture aléatoire et lecture séquentielle des blocs de données utilisateur.
+
+
+
+ a| 
+Toutes les écritures en lecture aléatoire
+ a| 
+Cette règle est une combinaison des règles lecture-écriture toutes en lecture et aucune écriture aléatoire et effectue les opérations suivantes :
+
+* En lecture, toutes les métadonnées sont caches, lecture aléatoire et lecture séquentielle des blocs de données utilisateur.
+* L'écriture met en cache tous les blocs de données utilisateur écrasés de façon aléatoire.
+
+
+
+
+ a| 
+Toutes les écritures aléatoires de lecture
+ a| 
+Cette fonctionnalité met en cache toutes les métadonnées, qui sont lues de manière aléatoire, lues de manière séquentielle et écrites de manière aléatoire les blocs de données utilisateur.
+
+
+
+ a| 
+Toutes les écritures aléatoires de lecture
+ a| 
+Cette règle est une combinaison des règles d'écriture aléatoire de toutes les opérations de lecture et d'écriture aléatoire sans lecture et effectue les opérations suivantes :
+
+* Cette fonctionnalité met en cache toutes les métadonnées, qu'elles soient lues de manière aléatoire et séquentielles, avec des blocs de données utilisateur écrits de manière aléatoire.
+* L'écriture met en cache tous les blocs de données utilisateur écrasés de façon aléatoire.
+
+
+
+
+ a| 
+Métadonnées
+ a| 
+Les blocs de métadonnées des caches de lecture uniquement.
+
+
+
+ a| 
+Écriture méta-aléatoire
+ a| 
+Cette règle est une combinaison des métadonnées et pas d'écriture aléatoire et effectue les opérations suivantes : caches de lecture uniquement
+
+
+
+ a| 
+Pas d'écriture aléatoire
+ a| 
+L'écriture met en cache tous les blocs de données utilisateur écrasés de façon aléatoire. La règle n'exécute pas de mise en cache de lecture.
+
+
+
+ a| 
+Lecture aléatoire
+ a| 
+La lecture met en cache tous les blocs de métadonnées et lit de façon aléatoire les blocs de données utilisateur.
+
+
+
+ a| 
+Lecture-écriture aléatoire
+ a| 
+La lecture met en cache toutes les métadonnées, lecture aléatoire et écriture aléatoire des blocs de données utilisateur.
+
+
+
+ a| 
+Lecture-écriture-écriture-aléatoire
+ a| 
+Cette règle est une combinaison des règles lecture aléatoire écriture et pas de lecture aléatoire écriture et fait ce qui suit :
+
+* La lecture met en cache toutes les métadonnées, les blocs de données utilisateur lus de manière aléatoire et remplacés de manière aléatoire.
+* L'écriture met en cache tous les blocs de données utilisateur écrasés de façon aléatoire.
+
+
+|===
+* *Priorité de conservation du cache*
++
+Priorité de conservation du cache pour le volume. La priorité de conservation du cache définit le temps pendant lequel les blocs d'un volume seront dans l'état du cache dans un Flash Pool après leur refroidissement.
+
++
+** Faible
++
+Mise en cache des blocs de volume froid pour la durée la plus faible
+
+** Normale
++
+Mettre en cache les blocs de volume froid pour l'heure par défaut
+
+** Élevée
++
+Mise en cache des blocs de volume froid pour la durée la plus élevée
+
+
+
+* *Type de cryptage*
++
+Type de chiffrement appliqué à un volume.
+
++
+** Logiciels : volumes protégés à l'aide de solutions NetApp Volume Encryption (NVE) ou de chiffrement logiciel de chiffrement d'agrégats NetApp (NAE).
+** Matériel : volumes protégés à l'aide du chiffrement matériel NetApp Storage Encryption (NSE).
+** Logiciel et matériel : volumes protégés par le chiffrement logiciel et matériel.
+** Aucun : volumes qui ne sont pas chiffrés.
+
+
+* *Agrégat*
++
+Le nom de l'agrégat sur lequel réside le volume ou le nombre d'agrégats sur lequel réside le volume FlexGroup
+
++
+Vous pouvez cliquer sur le nom pour afficher les détails dans la page de détails des agrégats. Pour les volumes FlexGroup, vous pouvez cliquer sur le nombre pour afficher les agrégats utilisés dans le FlexGroup de la page Aggregates.
+
+* *Nœud*
++
+Le nom du nœud auquel appartient le volume ou le nombre de nœuds sur lequel réside le volume FlexGroup. Pour afficher plus d'informations sur le nœud du cluster, cliquez sur le nom du nœud.
+
++
+Vous pouvez cliquer sur le nom du nœud pour afficher les détails dans la page Détails du nœud. Pour les volumes FlexGroup, vous pouvez cliquer sur le nombre pour afficher les nœuds utilisés dans le FlexGroup de la page nœuds.
+
+* *Cluster*
++
+Cluster qui contient le volume de destination. Vous pouvez afficher d'autres détails sur le cluster en cliquant sur son nom.
+
+* *FQDN du cluster*
++
+Nom de domaine complet (FQDN) du cluster.
+
+

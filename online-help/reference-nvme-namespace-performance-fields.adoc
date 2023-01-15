@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-nvme-namespace-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les champs suivants sont disponibles dans la vue Performance : tous les espaces de noms NVMe et peuvent être utilisés dans des vues personnalisées et dans les rapports.' 
+---
+= Champs de performance de l'espace de noms NVMe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les champs suivants sont disponibles dans la vue Performance : tous les espaces de noms NVMe et peuvent être utilisés dans des vues personnalisées et dans les rapports.
+
+* *Sous-système*
++
+Sous-système de l'espace de noms.
+
+* *Statut*
++
+Un objet sain sans événements actifs affiche une icône de coche verte (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]). Si l'objet a un événement actif, l'icône d'indicateur d'événement identifie la gravité de l'événement : les événements critiques sont rouges (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), les événements d'erreur sont orange (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), et les événements d'avertissement sont jaunes (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]).
+
+* *Espace de noms*
++
+Vous pouvez cliquer sur le nom de l'espace de noms pour accéder à la page des détails sur les performances de cet espace de noms.
+
+* *État*
++
+État actuel du namespace.
+
++
+** Offline - l'accès en lecture ou en écriture à l'espace de noms n'est pas autorisé.
+** En ligne - l'accès en lecture et en écriture à l'espace de noms est autorisé.
+** NVFail : le namespace a été automatiquement mis hors ligne en raison d'une défaillance de mémoire NVRAM.
+** Erreur d'espace : l'espace de noms est insuffisant.
+
+
+* *VM de stockage*
++
+Le SVM (Storage Virtual machine) auquel appartient le namespace. Vous pouvez cliquer sur le nom du SVM pour accéder à la page de détails du SVM.
+
+* *Cluster*
++
+Cluster auquel appartient l'espace de noms. Vous pouvez cliquer sur le nom du cluster pour accéder à la page des détails du cluster.
+
+* *FQDN du cluster*
++
+Nom de domaine complet (FQDN) du cluster.
+
+* *Volume*
++
+Le volume auquel appartient l'espace de noms. Vous pouvez cliquer sur le nom du volume pour accéder à la page de détails de ce volume.
+
+* *Capacité totale*
++
+La capacité de stockage totale de l'espace de noms, en gigaoctets.
+
+* *Capacité libre*
++
+La capacité de stockage inutilisée de l'espace de noms, en gigaoctets.
+
+* *IOPS*
++
+Les opérations d'entrée/sortie par seconde pour l'espace de noms.
+
+* * Latence*
++
+Le temps de réponse moyen pour toutes les demandes d'E/S du namespace, exprimé en millisecondes par opération.
+
+* *MB/s*
++
+Le débit du namespace est mesuré en mégaoctets par seconde.
+
+* *Politique de seuil*
++
+Règle de seuil de performances définie par l'utilisateur, ou règles actives sur cet objet de stockage Vous pouvez positionner votre curseur sur les noms de stratégie contenant des points de suspension (...) pour afficher le nom complet de la stratégie ou la liste des noms de stratégie affectés. Les boutons *affecter stratégie de seuil de performances* et *Effacer stratégie de seuil de performances* restent désactivés jusqu'à ce que vous sélectionniez un ou plusieurs objets en cliquant sur les cases situées à l'extrême gauche.
+
+

@@ -1,0 +1,104 @@
+---
+permalink: install-linux/task-upgrading-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez effectuer la mise à niveau de Unified Manager 9.7 ou 9.8 vers 9.9 en téléchargeant et en exécutant le fichier d"installation sur la plateforme Red Hat.' 
+---
+= Mise à niveau d'Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez effectuer la mise à niveau de Unified Manager 9.7 ou 9.8 vers 9.9 en téléchargeant et en exécutant le fichier d'installation sur la plateforme Red Hat.
+
+
+
+== Avant de commencer
+
+* Le système sur lequel vous mettez à niveau Unified Manager doit répondre à la configuration système et logicielle requise.
++
+xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[Configuration matérielle requise]
+
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Conditions requises pour l'installation et les logiciels Red Hat et CentOS]
+
+* Vous devez installer ou mettre à niveau la version correcte d'OpenJDK avant de mettre à niveau Unified Manager.
++
+xref:task-upgrading-openjdk-on-linux-ocum.adoc[Mise à niveau de JRE sous Linux]
+
+* MySQL Community Edition est automatiquement mis à niveau lors de la mise à niveau d'Unified Manager. Si la version installée de MySQL sur votre système est antérieure à 8.0.25, le processus de mise à niveau de Unified Manager met automatiquement à niveau MySQL vers 8.0.25.
++
+Cependant, vous pouvez vouloir mettre à niveau MySQL vers la dernière version mineure sur votre système. Avant une mise à niveau vers la version mineure suivante, assurez-vous que la version de base de MySQL sur votre système est 8.0.25.
+
+* Vous devez être abonné au Gestionnaire d'abonnement Red Hat Enterprise Linux.
+* Pour éviter les pertes de données, vous devez avoir créé une sauvegarde de la base de données Unified Manager en cas de problème lors de la mise à niveau. Il est également recommandé de déplacer le fichier de sauvegarde du `/opt/netapp/data` répertoire vers un emplacement externe.
+* Lors d'une mise à niveau, vous pouvez être invité à confirmer si vous souhaitez conserver les paramètres par défaut précédents pour conserver les données de performances pendant 13 mois ou à les modifier à 6 mois. A la confirmation, les données historiques de performance au bout de 6 mois sont supprimées.
+* Vous devez avoir terminé toutes vos opérations en cours d'exécution, car Unified Manager n'est pas disponible pendant le processus de mise à niveau.
+
+
+
+
+== Étapes
+
+. Connectez-vous au serveur Red Hat Enterprise Linux ou CentOS cible.
+. Téléchargez le bundle Unified Manager sur le serveur.
++
+xref:task-downloading-unified-manager.adoc[Téléchargement de Unified Manager pour Red Hat ou CentOS]
+
+. Accédez au répertoire cible et développez le pack Unified Manager : `unzip ActiveIQUnifiedManager-<version\>.zip`
++
+Les modules RPM requis pour Unified Manager sont décompressés dans le répertoire cible.
+
+. Vérifiez que le module suivant est disponible dans le répertoire : `ls *.rpm`
++
+** `netapp-um<version\>.x86_64.rpm`
+
+
+. Pour les systèmes qui ne sont pas connectés à Internet ou qui n'utilisent pas les référentiels Red Hat Enterprise Linux, procédez comme suit pour déterminer si vous ne disposez pas des packages requis et les télécharger :
++
+.. Afficher la liste des packages disponibles et non disponibles : `yum install netapp-um<version\>.x86_64.rpm --assumeno`
++
+Les éléments de la section « installation: » Sont les paquets disponibles dans le répertoire actuel, et les éléments de la section « installation pour dépendances: » Sont les modules qui manquent sur votre système.
+
+.. Sur un autre système qui dispose d'un accès Internet, exécutez la commande suivante pour télécharger les packages manquants. `yum install package_name --downloadonly --downloaddir=.`
++
+Les packs sont téléchargés dans le répertoire spécifié comme `–downloaddir=.`
+
++
+Comme le plug-in « yum-plugin-downloadonly » n'est pas toujours activé sur les systèmes Red Hat Enterprise Linux, vous devrez peut-être activer cette fonctionnalité pour télécharger un package sans l'installer :``yum install yum-plugin-downloadonly``
+
+.. Créez un nouveau répertoire dans le système d'installation et copiez les packages téléchargés à partir du système connecté à Internet.
+.. Accédez au nouveau répertoire sur le système d'installation et exécutez la commande suivante pour installer MySQL Community Edition, ainsi que ses dépendances. `yum install *.rpm`
+
+
+. Exécutez le script de pré-installation pour vous assurer qu'aucun paramètre de configuration du système ou aucun logiciel installé ne peut entrer en conflit avec la mise à niveau : `sudo ./pre_install_check.sh`
++
+Le script de pré-installation vérifie que le système dispose d'un abonnement Red Hat valide et qu'il a accès aux référentiels logiciels requis. Si le script identifie des problèmes, vous devez les corriger avant de mettre à niveau Unified Manager.
+
+. Mettez à niveau Unified Manager à l'aide du script suivant : `upgrade.sh`
++
+Ce script exécute automatiquement les modules RPM et met à niveau les logiciels sous-jacentes nécessaires ainsi que les modules Unified Manager qui s'exécutent sur ceux-ci. En outre, le script de mise à niveau vérifie s'il existe des paramètres de configuration du système ou tout logiciel installé pouvant entrer en conflit avec la mise à niveau. Si le script identifie des problèmes, vous devez les corriger avant de mettre à niveau Unified Manager.
+
+. Une fois la mise à niveau terminée, faites défiler les messages jusqu'à ce que le message affiche une adresse IP ou une URL pour l'interface utilisateur Web de Unified Manager, le nom d'utilisateur de maintenance (uadmin) et le mot de passe par défaut.
++
+Ce message est similaire à ce qui suit :
+
++
+[listing]
+----
+Active IQ Unified Manager upgraded successfully.
+Use a web browser and one of the following URLs to access the Unified Manager GUI:
+
+https://default_ip_address/    (if using IPv4)
+https://[default_ip_address]/  (if using IPv6)
+https://fully_qualified_domain_name/
+----
+
+
+
+
+== Une fois que vous avez terminé
+
+Entrez l'adresse IP ou l'URL spécifiée dans un navigateur Web pris en charge pour démarrer l'interface utilisateur Web de Unified Manager, puis connectez-vous en utilisant le même nom d'utilisateur de maintenance (umadmin) et le même mot de passe que celui défini précédemment.

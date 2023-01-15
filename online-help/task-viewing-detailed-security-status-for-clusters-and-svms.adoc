@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-viewing-detailed-security-status-for-clusters-and-svms.html 
+sidebar: sidebar 
+keywords: cluster security status,SVM security status,volume encryption status 
+summary: 'La page sécurité affiche l"état de sécurité de haut niveau pour tous les clusters, ainsi que l"état de sécurité détaillé pour chaque cluster. L"état détaillé du cluster inclut la conformité du cluster, la conformité des SVM et la conformité au chiffrement de volume.' 
+---
+= Affichage de l'état de sécurité détaillé pour les clusters et les SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page sécurité affiche l'état de sécurité de haut niveau pour tous les clusters, ainsi que l'état de sécurité détaillé pour chaque cluster. L'état détaillé du cluster inclut la conformité du cluster, la conformité des SVM et la conformité au chiffrement de volume.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Dashboard*.
+. Selon que vous souhaitez afficher l'état de sécurité de tous les clusters surveillés ou d'un seul cluster, sélectionnez *tous les clusters* ou sélectionnez un seul cluster dans le menu déroulant.
+. Cliquez sur la flèche droite dans le panneau *sécurité*.
++
+La page sécurité affiche les informations suivantes :
+
++
+** l'état de sécurité du cluster (nombre de clusters conformes ou non conformes)
+** Statut de sécurité du SVM (nombre de SVM conformes ou non conformes)
+** statut du chiffrement de volume (nombre de volumes chiffrés ou non chiffrés)
+** méthodes d'authentification de cluster utilisées sur chaque cluster
+
+
+. Reportez-vous à la http://www.netapp.com/us/media/tr-4569.pdf["Guide NetApp sur le renforcement de la sécurité des environnements ONTAP 9"] Pour savoir comment assurer la conformité de tous les clusters, SVM et volumes aux recommandations de sécurité de NetApp.
+

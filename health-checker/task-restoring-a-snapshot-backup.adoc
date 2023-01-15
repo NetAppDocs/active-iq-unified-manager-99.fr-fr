@@ -1,0 +1,68 @@
+---
+permalink: health-checker/task-restoring-a-snapshot-backup.html 
+sidebar: sidebar 
+keywords: restore,linux 
+summary: 'En cas de perte ou de corruption des données, Unified Manager peut être restauré vers l"état stable précédent avec un minimum de perte de données. Vous pouvez restaurer la base de données Snapshot Unified Manager sur un système d"exploitation local ou distant via la console de maintenance Unified Manager.' 
+---
+= Restauration d'une sauvegarde Snapshot pour Linux et Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En cas de perte ou de corruption des données, Unified Manager peut être restauré vers l'état stable précédent avec un minimum de perte de données. Vous pouvez restaurer la base de données Snapshot Unified Manager sur un système d'exploitation local ou distant via la console de maintenance Unified Manager.
+
+
+
+== Avant de commencer
+
+* Vous devez disposer des informations d'identification utilisateur root pour l'hôte Linux et des privilèges d'administration pour la machine hôte Windows sur laquelle Unified Manager est installé.
+* Vous devez disposer d'un ID utilisateur et d'un mot de passe autorisés pour vous connecter à la console de maintenance du serveur Unified Manager.
+
+
+
+
+== Description de la tâche
+
+La fonction de restauration est spécifique à la plate-forme et à la version. La restauration d'une sauvegarde Unified Manager ne peut être effectuée que sur la même version de Unified Manager.
+
+
+
+== Étapes
+
+. Connectez-vous à l'adresse IP ou au nom de domaine complet du système Unified Manager.
+
+
+[cols="2*"]
+|===
+| *Linux* | Coque sécurisée 
+
+
+ a| 
+*Windows*
+ a| 
+Coque d'alimentation
+
+|===
+. Connectez-vous au système avec le nom et le mot de passe de l'utilisateur de maintenance (umadmin).
+. Saisissez la commande `maintenance_console` Puis appuyez sur entrée.
+. Dans la console de maintenance *Menu principal*, saisissez le numéro de l'option *Sauvegarder Restaurer*.
+. Entrez le numéro *sauvegarde et restauration à l'aide de NetApp Snapshot*.
++
+Si vous effectuez une restauration sur un nouveau serveur, une fois l'installation de Unified Manager terminée, ne lancez pas l'interface utilisateur et ne configurez pas les clusters, les utilisateurs ou les paramètres d'authentification. Entrez le nombre de *configurer NetApp Snapshot Backup* et configurez les paramètres de sauvegarde Snapshot comme ils étaient configurés sur le système d'origine.
+
+. Entrez le numéro de *Restaurer à l'aide de NetApp Snapshot*.
+. Sélectionnez le fichier de sauvegarde Snapshot que vous souhaitez restaurer et appuyez sur *entrée*.
+. Une fois le processus de restauration terminé, connectez-vous à l'interface utilisateur Unified Manager.
+
+
+
+
+== Une fois que vous avez terminé
+
+Après avoir restauré la sauvegarde, si le serveur Workflow Automation ne fonctionne pas, effectuez les opérations suivantes :
+
+. Sur le serveur Workflow Automation, modifiez l'adresse IP du serveur Unified Manager pour qu'elle pointe vers la dernière machine.
+. Sur le serveur Unified Manager, réinitialisez le mot de passe de la base de données si l'acquisition échoue à l'étape 1.
+

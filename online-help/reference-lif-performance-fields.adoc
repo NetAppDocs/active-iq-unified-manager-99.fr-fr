@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-lif-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les champs suivants sont disponibles dans la vue performances : toutes les interfaces réseau et peuvent être utilisés dans les vues personnalisées et dans les rapports.' 
+---
+= Champs de performances de l'interface réseau
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les champs suivants sont disponibles dans la vue performances : toutes les interfaces réseau et peuvent être utilisés dans les vues personnalisées et dans les rapports.
+
+* *Statut*
++
+Un objet sain sans événements actifs affiche une icône de coche verte (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]). Si l'objet a un événement actif, l'icône d'indicateur d'événement identifie la gravité de l'événement : les événements critiques sont rouges (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), les événements d'erreur sont orange (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), et les événements d'avertissement sont jaunes (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]).
+
+* *Interface réseau*
++
+Vous pouvez cliquer sur le nom de l'interface réseau (LIF) pour accéder à la page détaillée de performances de cette LIF.
+
+* *Type*
++
+Les types d'interface : réseau (iSCSI, NFS, CIFS), FCP ou NVMf FC.
+
+* * Latence*
++
+Temps de réponse moyen pour toutes les demandes d'E/S, exprimé en millisecondes par opération. La latence n'est pas applicable aux LIF NFS et CIFS, et elle est affichée sous la forme N/A pour ces types.
+
+* *IOPS*
++
+Les opérations d'entrée/sortie par seconde. IOPS ne s'applique pas aux LIF NFS et CIFS, et est affiché en tant que N/A pour ces types.
+
+* *MB/s*
++
+Le débit sur l'interface, mesuré en mégaoctets par seconde.
+
+* *Cluster*
++
+Cluster auquel appartient l'interface. Vous pouvez cliquer sur le nom du cluster pour accéder à la page des détails du cluster.
+
+* *FQDN du cluster*
++
+Nom de domaine complet (FQDN) du cluster.
+
+* *SVM*
++
+Le serveur virtuel de stockage auquel appartient l'interface. Vous pouvez cliquer sur le nom du SVM pour accéder à la page de détails du SVM.
+
+* *Emplacement à domicile*
++
+L'emplacement de départ de l'interface, affiché sous forme de nom de nœud et de port, séparé par deux points (:). Si l'emplacement est affiché avec des points de suspension (...), vous pouvez positionner votre curseur sur le nom de l'emplacement pour afficher l'emplacement complet.
+
+* *Emplacement actuel*
++
+L'emplacement actuel de l'interface, affiché sous la forme d'un nom de nœud et d'un nom de port, séparé par deux points (:). Si l'emplacement est affiché avec des points de suspension (...), vous pouvez positionner votre curseur sur le nom de l'emplacement pour afficher l'emplacement complet.
+
+* *Rôle*
++
+Le rôle d'interface : data, Cluster, Node Management ou intercluster.
+
+* *Politique de seuil*
++
+Règle de seuil de performances définie par l'utilisateur, ou règles actives sur cet objet de stockage Vous pouvez positionner votre curseur sur les noms de stratégie contenant des points de suspension (...) pour afficher le nom complet de la stratégie ou la liste des noms de stratégie affectés. Les boutons *affecter stratégie de seuil de performances* et *Effacer stratégie de seuil de performances* restent désactivés jusqu'à ce que vous sélectionniez un ou plusieurs objets en cliquant sur les cases situées à l'extrême gauche.
+
+

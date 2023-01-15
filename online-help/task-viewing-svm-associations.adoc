@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez utiliser la page pairs pour stocker des machines virtuelles, ainsi que leurs propriétés et déterminer si d"autres machines virtuelles de stockage sont requises.' 
+---
+= Affichage des pairs pour les machines virtuelles de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page pairs pour stocker des machines virtuelles, ainsi que leurs propriétés et déterminer si d'autres machines virtuelles de stockage sont requises.
+
+
+
+== Avant de commencer
+
+Vous devez avoir le rôle Administrateur d'applications ou Administrateur de stockage.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *protection* > *Storage VM pairs*.
++
+La liste des pairs de machines virtuelles de stockage et leurs propriétés s'affiche.
+
+

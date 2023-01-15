@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-health-all-smb-shares-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vue Santé : tous les partages SMB affiche des informations sur les partages SMB/CIFS tels que son statut, le nom du partage, le chemin de jonction, contenant des objets, les paramètres de sécurité, et exporter les règles définies pour le partage.' 
+---
+= Santé : vue tous les partages SMB
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vue Santé : tous les partages SMB affiche des informations sur les partages SMB/CIFS tels que son statut, le nom du partage, le chemin de jonction, contenant des objets, les paramètres de sécurité, et exporter les règles définies pour le partage.
+
+Par défaut, les objets de cette page sont triés en fonction de leur état. Les objets avec des erreurs sont répertoriés en premier et les objets avec le statut Normal sont répertoriés ensuite. Cela fournit une indication visuelle immédiate des problèmes à résoudre.
+
+Les commandes situées en haut de la page vous permettent de sélectionner une vue particulière (pour l'intégrité, les performances, la capacité, etc.), d'effectuer des recherches pour localiser des objets spécifiques, de créer et d'appliquer des filtres pour restreindre la liste des données affichées, ajouter/supprimer/réorganiser des colonnes sur la page, et exportez les données de la page vers un `.csv`, `.pdf`, ou `.xlsx` fichier. Après avoir personnalisé la page, vous pouvez enregistrer les résultats sous forme de vue personnalisée, puis planifier régulièrement un rapport de ces données à générer et à envoyer par e-mail.
+
+Pour analyser la latence et le débit d'un objet spécifique, cliquez sur l'icône plus image:../media/more-icon.gif[""], Puis *Analyze Workload* et vous pouvez afficher les graphiques de performances et de capacité sur la page Workload Analysis.
+
+Voir xref:reference-smb-cifs-shares-health-fields.adoc[Champs d'état des partages SMB/CIFS] pour la description de tous les champs de cette page.

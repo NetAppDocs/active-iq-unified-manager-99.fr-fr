@@ -1,0 +1,16 @@
+---
+permalink: config/concept-configuring-um-backup.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous pouvez configurer la fonctionnalité de sauvegarde sur Unified Manager par le biais d"un ensemble d"étapes de configuration à effectuer sur les systèmes hôtes et sur via la console de maintenance.' 
+---
+= Configuration de la sauvegarde Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer la fonctionnalité de sauvegarde sur Unified Manager par le biais d'un ensemble d'étapes de configuration à effectuer sur les systèmes hôtes et sur via la console de maintenance.
+
+Pour plus d'informations sur les étapes de configuration, reportez-vous à la section «gestion des opérations de sauvegarde et de restauration» dans le _Active IQ® Unified Manager Workflow Guide de gestion de l'intégrité du cluster_.

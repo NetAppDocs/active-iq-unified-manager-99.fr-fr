@@ -1,0 +1,20 @@
+---
+permalink: online-help/reference-assign-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez utiliser la page attribuer un seuil de performances pour affecter une stratégie de seuil de performances à un ou plusieurs objets de stockage. 
+---
+= Attribuer une stratégie de seuil de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser la page attribuer un seuil de performances pour affecter une stratégie de seuil de performances à un ou plusieurs objets de stockage.
+
+La liste des règles contient uniquement les règles valides pour le type d'objet de stockage sélectionné.
+
+Sélectionnez la stratégie à appliquer à l'objet ou aux objets, puis cliquez sur *appliquer la stratégie*.
+
+Dans certains cas, un message d'erreur peut être renvoyé lorsque vous tentez d'appliquer une règle, par exemple, lors de l'application d'une règle de combinaison à un volume FlexGroup, où le second compteur inclut un objet de nœud ou d'agrégat. Comme les volumes FlexGroup peuvent être répartis sur plusieurs nœuds et agrégats, cette opération n'est pas autorisée.

@@ -1,0 +1,75 @@
+---
+permalink: online-help/reference-qtree-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les champs suivants sont disponibles dans la fenêtre capacité : tous les qtrees et peuvent être utilisés dans des vues personnalisées et des rapports.' 
+---
+= Champs de capacité qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les champs suivants sont disponibles dans la fenêtre capacité : tous les qtrees et peuvent être utilisés dans des vues personnalisées et des rapports.
+
+* *Statut*
++
+Affiche le statut actuel du qtree. Le statut peut être critique (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), erreur (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), Avertissement (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]) Ou Normal (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]).
+
+* *Qtree*
++
+Affiche le nom du qtree.
+
+* *Volume*
++
+Affiche le nom du volume qui contient le qtree.
+
++
+Cliquez sur le nom du volume pour afficher plus d'informations sur celui-ci.
+
+* *Type de quota*
++
+Si un quota est défini pour le qtree, spécifie si le quota est pour un utilisateur, un groupe d'utilisateurs ou une arborescence.
+
+* *Utilisateur ou groupe*
++
+Affiche le nom de l'utilisateur ou du groupe d'utilisateurs. Il y aura plusieurs lignes pour chaque utilisateur et groupe d'utilisateurs. Lorsque le type de quota est qtree ou si le quota n'est pas défini, la colonne est vide.
+
+* *Disque utilisé %*
++
+Affiche le pourcentage d'espace disque utilisé. Si une limite matérielle de disque est définie, cette valeur est basée sur la limite matérielle du disque. Si le quota est défini sans limite Hard disque, la valeur est basée sur l'espace de données du volume. Si le quota n'est pas défini ou si des quotas sont définis sur le volume auquel appartient le qtree, « non applicable » s'affiche sur la page de la grille et le champ est vide dans les données d'exportation CSV.
+
+* *Limite matérielle disque*
++
+Affiche la quantité maximale d'espace disque alloué au qtree. Unified Manager génère un événement critique lorsque cette limite est atteinte et qu'aucune autre écriture de disque n'est autorisée. La valeur s'affiche sous la forme « illimitée » pour les conditions suivantes : si le quota est défini sans limite matérielle de disque, si le quota n'est pas défini ou si des quotas sont situés sur le volume auquel appartient le qtree.
+
+* *Limite logicielle du disque*
++
+Affiche la quantité d'espace disque alloué au qtree avant de générer un événement d'avertissement. La valeur s'affiche sous la forme « illimitée » pour les conditions suivantes : si le quota est défini sans limite logicielle de disque, si le quota n'est pas défini ou si des quotas sont situés sur le volume auquel appartient le qtree.
+
+* *Fichiers utilisés %*
++
+Affiche le pourcentage de fichiers utilisés dans le qtree. Si la limite matérielle du fichier est définie, cette valeur est basée sur la limite matérielle du fichier. Aucune valeur n'est affichée si le quota est défini sans limite matérielle de fichier. Si le quota n'est pas défini ou si des quotas sont définis sur le volume auquel appartient le qtree, « non applicable » s'affiche sur la page de la grille et le champ est vide dans les données d'exportation CSV.
+
+* *Limite matérielle de fichier*
++
+Affiche la limite matérielle du nombre de fichiers autorisés sur les qtrees. La valeur s'affiche sous la forme « illimitée » pour les conditions suivantes : si le quota est défini sans limite matérielle de fichier, si le quota n'est pas défini ou si des quotas sont situés sur le volume auquel appartient le qtree.
+
+* *Limite logicielle de fichier*
++
+Affiche la limite soft pour le nombre de fichiers autorisés sur les qtrees. La valeur s'affiche sous la forme « illimitée » pour les conditions suivantes : si le quota est défini sans limite logicielle de fichier, si le quota n'est pas défini ou si des quotas sont situés sur le volume auquel appartient le qtree.
+
+* *SVM*
++
+Affiche le nom de la machine virtuelle de stockage (SVM) contenant le qtree.
+
+* *Cluster*
++
+Affiche le nom du cluster contenant le qtree.
+
+* *FQDN du cluster*
++
+Affiche le nom de domaine complet (FQDN) du cluster.
+
+

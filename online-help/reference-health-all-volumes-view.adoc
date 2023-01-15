@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-health-all-volumes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vue Santé : tous les volumes affiche des informations sur les volumes des systèmes de stockage surveillés et vous permet de modifier les paramètres de seuil du volume.' 
+---
+= Intégrité : vue de tous les volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vue Santé : tous les volumes affiche des informations sur les volumes des systèmes de stockage surveillés et vous permet de modifier les paramètres de seuil du volume.
+
+Par défaut, les objets des pages de vue sont triés en fonction de la criticité de l'événement. Les objets avec des événements critiques sont répertoriés en premier et les objets avec des événements d'avertissement sont répertoriés en second. Cela fournit une indication visuelle immédiate des problèmes à résoudre. Chaque volume de la grille volumes dispose de liens vers ONTAP System Manager. L'option de menu *Affichage dans System Manager* est disponible sous la forme d'un des liens pour chaque volume. Ce lien vous redirige vers ONTAP System Manager afin d'afficher les mêmes relations de protection.
+
+Les commandes situées en haut de la page vous permettent de sélectionner une vue particulière (pour l'intégrité, les performances, la capacité, etc.), d'effectuer des recherches pour localiser des objets spécifiques, de créer et d'appliquer des filtres pour restreindre la liste des données affichées, ajouter/supprimer/réorganiser des colonnes sur la page, et exportez les données de la page vers un `.csv`, `.pdf`, ou `.xlsx` fichier. Après avoir personnalisé la page, vous pouvez enregistrer les résultats sous forme de vue personnalisée, puis planifier régulièrement un rapport de ces données à générer et à envoyer par e-mail.
+
+Pour analyser la latence et le débit d'un objet spécifique, cliquez sur l'icône plus image:../media/more-icon.gif[""], Puis *Analyze Workload* et vous pouvez afficher les graphiques de performances et de capacité sur la page Workload Analysis.
+
+Voir xref:reference-volume-health-fields.adoc[Champs de contrôle du volume] pour la description de tous les champs de cette page.
+
+
+
+== Boutons de commande
+
+* *Modifier le seuil*
++
+Affiche la boîte de dialogue Modifier les seuils, qui vous permet de modifier les paramètres de seuil de santé d'un ou plusieurs volumes.
+
+* *Protéger*
++
+Affiche les sous-menus suivants :
+
++
+** SnapMirror
++
+Permet de créer une relation SnapMirror pour les volumes sélectionnés.
+
+** SnapVault
++
+Permet de créer une relation SnapVault pour les volumes sélectionnés.
+
+
+
+* *Restaurer*
++
+Affiche la boîte de dialogue Restaurer, qui vous permet de restaurer des répertoires ou des fichiers à partir d'un volume à la fois.
+
+* * Annotate*
++
+Permet d'annoter le volume sélectionné.
+
+

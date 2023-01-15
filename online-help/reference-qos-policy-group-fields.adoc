@@ -1,0 +1,101 @@
+---
+permalink: online-help/reference-qos-policy-group-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les champs suivants sont disponibles dans la page Performance: QoS Policy Groups et peuvent être utilisés dans des vues personnalisées et dans des rapports.' 
+---
+= Champs QoS Policy Group
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les champs suivants sont disponibles dans la page Performance: QoS Policy Groups et peuvent être utilisés dans des vues personnalisées et dans des rapports.
+
+* *Groupe de politiques QoS*
++
+Nom de la « policy group » QoS.
+
++
+Pour les règles NetApp Service Level Manager (NSLM) 1.3 qui ont été importées dans Unified Manager 9.7 ou version ultérieure, le nom affiché ici inclut le nom du SVM et d'autres informations qui ne sont pas dans le nom lorsque le niveau de service de performance a été défini dans NSLM. Par exemple, le nom « NSLM_vs6_Performance_2_0 » signifie qu'il s'agit de la politique PSL « NSLM Performance » définie par le système créée sur le SVM « vs6 » avec une latence attendue de « 2 ms/op ».
+
+* *Cluster*
++
+Cluster auquel appartient la « policy group » QoS. Vous pouvez cliquer sur le nom du cluster pour accéder à la page des détails du cluster.
+
+* *FQDN du cluster*
++
+Nom de domaine complet (FQDN) du cluster.
+
+* *SVM*
++
+Le SVM (Storage Virtual machine) auquel appartient la « QoS policy group ». Vous pouvez cliquer sur le nom du SVM pour accéder à la page de détails du SVM.
+
++
+[NOTE]
+====
+Ce champ est vide si la politique de QoS a été créée sur le SVM d'administration, car ce type de SVM représente le cluster.
+
+====
+* *Débit min*
++
+Le débit minimal, en IOPS, que le groupe de règles sera garanti à fournir.
+
++
+Pour les règles adaptatives, il s'agit du minimum d'IOPS par To attendus alloués au volume ou à la LUN, en fonction de la taille allouée à l'objet de stockage.
+
+* *Débit max*
++
+En débit, en IOPS et/ou en Mo/s, que le groupe de règles ne doit pas dépasser. Lorsque ce champ est vide, cela signifie que la max dans l'ensemble défini dans ONTAP est infinie.
+
++
+Pour les règles adaptatives, il s'agit du maximum (pic) d'IOPS par To possibles alloués au volume ou au LUN, en fonction de la taille de l'objet de stockage _allouée_ ou de la taille de l'objet de stockage _Used_.
+
+* *IOPS minimum absolu*
++
+Pour les règles adaptatives, il s'agit de la valeur d'IOPS minimale absolue utilisée comme valeur prioritaire lorsque les IOPS attendues sont inférieures à cette valeur.
+
+* *Taille de bloc*
++
+Taille de bloc spécifiée pour la règle adaptative de qualité de service.
+
+* *Allocation min*
++
+Indique si l'espace alloué ou l'espace utilisé est utilisé pour déterminer les IOPS de débit maximal.
+
+* * Latence prévue*
++
+Latence moyenne attendue pour les opérations d'entrée/sortie du stockage.
+
+* *Partagé*
++
+Dans les règles de QoS classiques, si les valeurs de débit définies dans le groupe de règles sont partagées entre plusieurs objets.
+
+* *Objets associés*
++
+Nombre de workloads affectés au groupe de règles de QoS.
+
+
+
+Vous pouvez cliquer sur le bouton développer (image:../media/chevron-down.gif[""]) En regard du nom du groupe de stratégies QoS pour afficher plus de détails sur le groupe de règles.
+
+* *Capacité allouée*
++
+Quantité d'espace que les objets du groupe de règles de QoS utilisent actuellement.
+
+* *Objets associés*
++
+Nombre de charges de travail affectées à ce groupe de règles de QoS, séparées en volumes et en LUN.
+
++
+Vous pouvez cliquer sur le numéro pour accéder à une page qui fournit plus de détails sur les volumes ou LUN sélectionnés.
+
+* *Événements*
++
+Si un objet ou des objets affectés au groupe de règles de QoS ont entraîné une violation de la politique de QoS, l'icône d'indicateur d'événements identifie la gravité de l'événement (critique, erreur ou avertissement) et affiche un message d'erreur.
+
++
+Vous pouvez cliquer sur le message pour accéder à la page Evénements filtrée afin d'afficher les objets impliqués dans l'événement.
+
+

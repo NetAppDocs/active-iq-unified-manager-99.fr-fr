@@ -1,0 +1,20 @@
+---
+permalink: online-help/reference-performance-qos-policy-groups-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vue QoS Policy Groups affiche les groupes de règles de QoS disponibles sur les clusters qui surveillent Unified Manager. Cela inclut les règles de QoS classiques, les règles de QoS adaptative et les règles de QoS attribuées à l"aide des niveaux de services de performance.' 
+---
+= Performance : vue des groupes de règles de QoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vue QoS Policy Groups affiche les groupes de règles de QoS disponibles sur les clusters qui surveillent Unified Manager. Cela inclut les règles de QoS classiques, les règles de QoS adaptative et les règles de QoS attribuées à l'aide des niveaux de services de performance.
+
+Les commandes situées en haut de la page vous permettent de sélectionner une vue particulière en fonction du type de règle de qualité de service qui vous intéresse, d'effectuer des recherches pour localiser des objets spécifiques, de créer et d'appliquer des filtres pour restreindre la liste des données affichées, d'ajouter/supprimer/réorganiser des colonnes sur la page, et exportez les données de la page vers un `.csv` ou `.pdf` fichier.
+
+Après avoir personnalisé la page, vous pouvez enregistrer les résultats sous forme de vue personnalisée, puis planifier régulièrement un rapport de ces données à générer et à envoyer par e-mail.
+
+Voir xref:reference-qos-policy-group-fields.adoc[Champs QoS Policy Group] pour la description de tous les champs de cette page.

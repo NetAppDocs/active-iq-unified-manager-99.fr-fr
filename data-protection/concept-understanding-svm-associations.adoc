@@ -1,0 +1,32 @@
+---
+permalink: data-protection/concept-understanding-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: Les pairs de machines virtuelles de stockage sont mappages entre une machine virtuelle de stockage source et une machine virtuelle de stockage de destination, utilisée par les applications partenaires pour la sélection des ressources et le provisionnement du volume secondaire. 
+---
+= Comprendre les pairs sur les machines virtuelles de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les pairs de machines virtuelles de stockage sont mappages entre une machine virtuelle de stockage source et une machine virtuelle de stockage de destination, utilisée par les applications partenaires pour la sélection des ressources et le provisionnement du volume secondaire.
+
+Les pairs sont toujours créés entre une machine virtuelle de stockage source et une machine virtuelle de stockage de destination, que la machine virtuelle de stockage de destination soit une destination secondaire ou tertiaire. En tant que source, vous ne pouvez pas utiliser une machine virtuelle de stockage de destination secondaire pour créer un homologue avec une machine virtuelle de stockage de destination tertiaire.
+
+Vous pouvez également peer-to-peer sur une machine virtuelle de stockage :
+
+* Peer-to-peer
++
+Vous pouvez créer un homologue entre n'importe quelle machine virtuelle de stockage source primaire et une ou plusieurs machines virtuelles de stockage de destination. Cela signifie que toutes les machines virtuelles de stockage existantes qui nécessitent actuellement une protection, ainsi que toutes les machines virtuelles de stockage créées à l'avenir, sont dotées de la machine virtuelle de stockage de destination spécifiée. Par exemple, vous pouvez sauvegarder des applications de plusieurs sources situées à différents emplacements sur une ou plusieurs machines virtuelles de stockage de destination sur un emplacement unique.
+
+* Peer-to-peer en particulier pour créer une VM de stockage
++
+Vous pouvez créer un pair entre une machine virtuelle de stockage source spécifique et une ou plusieurs machines virtuelles de stockage de destination spécifiques. Par exemple, si vous proposez des services de stockage à de nombreux clients dont les données doivent être séparées les uns des autres, vous pouvez choisir cette option pour associer une VM de stockage source spécifique à une VM de stockage de destination spécifique qui n'est attribuée qu'à ce client.
+
+* Peer-to-peer en utilisant une machine virtuelle de stockage externe
++
+Vous pouvez créer un homologue entre une VM de stockage source et un volume flexible externe d'une VM de stockage de destination.
+
+

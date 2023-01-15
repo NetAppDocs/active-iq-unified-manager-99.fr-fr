@@ -1,0 +1,124 @@
+---
+permalink: online-help/reference-node-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les champs suivants sont disponibles dans la vue Santé : tous les nœuds et peuvent être utilisés dans les vues personnalisées et dans les rapports.' 
+---
+= Champs d'intégrité des nœuds
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les champs suivants sont disponibles dans la vue Santé : tous les nœuds et peuvent être utilisés dans les vues personnalisées et dans les rapports.
+
+* *Statut*
++
+Icône qui identifie l'état actuel du nœud. Le statut peut être critique (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), erreur (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), Avertissement (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]) Ou Normal (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]).
+
+* *Nœud*
++
+Nom du nœud. Vous pouvez cliquer sur le nom du nœud pour accéder à la page d'informations sur le nœud du cluster.
+
+* *État*
++
+État du nœud. L'état peut être Haut ou Bas.
+
+* *État HA*
++
+État de la paire HA. L'état peut être erreur, Avertissement, Normal ou non applicable.
+
+* *Temps d'arrêt*
++
+Temps écoulé ou horodatage depuis la mise hors ligne du nœud. Si le temps écoulé dépasse une semaine, l'horodatage dans lequel le nœud est mis hors ligne s'affiche.
+
+* *Système 100 % Flash optimisé*
++
+Indique si le nœud est optimisé pour prendre en charge uniquement les disques SSD.
+
+* *Modèle/famille*
++
+Modèle du nœud.
+
+* *Version OS*
++
+Version logicielle de ONTAP exécutée par le nœud.
+
+* *Numéro de série*
++
+Numéro de série du nœud.
+
+* *Version du micrologiciel*
++
+Numéro de version du firmware du nœud.
+
+* *Capacité utilisée agrégée*
++
+Quantité d'espace utilisé pour les données dans les agrégats du nœud.
+
+* *Capacité totale totale cumulée*
++
+Espace total disponible pour les données dans les agrégats du nœud.
+
+* *Capacité de réserve utilisable*
++
+Quantité d'espace disponible dans le nœud qui peut être utilisé pour améliorer la capacité de l'agrégat.
+
+* *Capacité brute utilisable*
++
+Quantité d'espace utilisable dans le nœud.
+
+* *Capacité brute totale*
++
+Capacité de chaque disque non formaté dans le nœud avant le dimensionnement adapté et la configuration RAID.
+
+* *Nombre de machines virtuelles de stockage*
++
+Le nombre de SVM contenu par le cluster.
+
+* *Nombre de ports FC*
++
+Nombre de ports FC contenus par le nœud.
+
+* *Nombre de ports FCoE*
++
+Le nombre de ports FCoE contenu par le nœud.
+
+* *Nombre de ports Ethernet*
++
+Le nombre de ports ethernet contenu par le nœud.
+
+* *Taille de la carte Flash*
++
+Taille des cartes Flash installées sur le nœud.
+
+* *Nombre de cartes Flash*
++
+Nombre de cartes Flash installées sur le nœud.
+
+* *Nombre de tiroirs disques*
++
+Nombre de tiroirs disques contenus par le nœud.
+
+* *Nombre de disques*
++
+Nombre de disques dans le nœud.
+
+* *Cluster*
++
+Nom du cluster auquel appartient le nœud. Vous pouvez cliquer sur le nom du cluster pour accéder à la page d'informations sur l'état de santé du cluster.
+
+* *FQDN du cluster*
++
+Nom de domaine complet (FQDN) du cluster.
+
+* *Contact*
++
+Informations de contact du nœud.
+
+* *Emplacement*
++
+L'emplacement du nœud.
+
+

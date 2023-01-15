@@ -1,0 +1,345 @@
+---
+section: health-checker
+title: Contrôlez et gérez l'état du cluster
+entries:
+- title: Présentation de la surveillance de l'état de santé Active IQ Unified Manager
+  url: "/health-checker/concept-introduction-to-unified-manager-health-monitoring.html"
+  entries:
+  - title: Fonctionnalités de contrôle de l'état de santé de Unified Manager
+    url: "/health-checker/concept-unified-manager-health-monitoring-features.html"
+  - title: Les interfaces Unified Manager utilisées pour gérer l'état du système de
+      stockage
+    url: "/health-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-health.html"
+  - title: Documentation des produits Active IQ Unified Manager
+    url: "/health-checker/reference-oncommand-unified-manager-product-documentation.html"
+- title: Tâches et workflows d'état de Unified Manager communs
+  url: "/health-checker/concept-common-unified-manager-administrative-workflows-and-tasks.html"
+  entries:
+  - title: Surveillance et résolution des problèmes de disponibilité des données
+    url: "/health-checker/concept-monitoring-and-troubleshooting-data-availability.html"
+    entries:
+    - title: Recherche et résolution des problèmes de liaison d'interconnexion de
+        basculement de stockage
+      url: "/health-checker/task-resolving-a-storage-failover-interconnect-link-down-condition.html"
+      entries:
+      - title: Effectuer une action corrective pour les liaisons d'interconnexion
+          de basculement du stockage en panne
+        url: "/health-checker/task-performing-corrective-action-for-storage-failover-interconnect-links-down.html"
+    - title: Résolution des problèmes de mise hors ligne des volumes
+      url: "/health-checker/task-resolving-volume-offline-issues.html"
+      entries:
+      - title: Exécution d'actions de diagnostic pour des conditions hors ligne de
+          volume
+        url: "/health-checker/task-performing-diagnotstic-actions-for-volume-offline-conditions.html"
+        entries:
+        - title: Détermination d'un volume hors ligne parce que son nœud hôte est
+            arrêté
+          url: "/health-checker/task-determining-if-a-volume-offline-condition-is-caused-by-a-down-cluster-node.html"
+        - title: Détermination d'un volume hors ligne et de son SVM arrêté, car un
+            nœud est arrêté
+          url: "/health-checker/task-determining-if-a-volume-is-offline-and-its-svm-is-stopped-because-a-cluster-node-is-down.html"
+        - title: Détermination de la disponibilité d'un volume à cause de disques
+            rompus dans un agrégat
+          url: "/health-checker/task-determining-if-a-volume-is-offline-because-of-broken-disks-in-an-aggregate.html"
+  - title: Résoudre les problèmes de capacité
+    url: "/health-checker/task-resolving-capacity-issues.html"
+    entries:
+    - title: Exécution de suggestions d'actions correctives pour un volume complet
+      url: "/health-checker/task-performing-suggested-remedial-actions-for-a-full-volume.html"
+  - title: Gestion des seuils de santé
+    pdf-filename: Gestion des seuils de santé (intégrité du cluster)
+    url: "/health-checker/concept-managing-health-thresholds.html"
+    entries:
+    - title: Quels sont les seuils d'état de santé de la capacité de stockage
+      url: "/health-checker/concept-what-storage-capacity-health-thresholds-are.html"
+    - title: Configuration des paramètres de seuil de santé global
+      pdf-filename: Configuration des paramètres de seuil de santé global (intégrité
+        du cluster)
+      url: "/health-checker/task-configuring-global-health-threshold-settings.html"
+      entries:
+      - title: Configuration des valeurs des seuils de santé globaux des agrégats
+        url: "/health-checker/task-configuring-global-aggregate-health-threshold-values.html"
+      - title: Configuration des valeurs de seuil de contrôle global du volume
+        url: "/health-checker/task-configuring-global-volume-health-threshold-values.html"
+      - title: Configuration des valeurs des seuils de santé des qtrees globaux
+        url: "/health-checker/task-configuring-global-qtree-health-threshold-values.html"
+      - title: Configuration des paramètres de seuil de décalage pour les relations
+          de protection non gérées
+        url: "/health-checker/task-configuring-lag-threshold-settings-for-unmanaged-protection-relationships.html"
+    - title: Modification des paramètres de seuil d'intégrité des agrégats individuels
+      url: "/health-checker/task-editing-individual-aggregate-health-threshold-settings.html"
+    - title: Modification des paramètres de seuil d'intégrité du volume individuel
+      url: "/health-checker/task-editing-individual-volume-health-threshold-settings.html"
+    - title: Modification des paramètres de seuil de santé des qtrees individuels
+      url: "/health-checker/task-editing-individual-qtree-health-threshold-settings.html"
+  - title: Gestion des objectifs de sécurité des clusters
+    pdf-filename: Gestion des objectifs de sécurité des clusters (intégrité du cluster)
+    url: "/health-checker/concept-managing-cluster-security-objectives.html"
+    entries:
+    - title: Quels sont les critères de sécurité évalués
+      pdf-filename: Quels sont les critères de sécurité évalués (intégrité du cluster)
+        ?
+      url: "/health-checker/concept-what-security-criteria-is-being-evaluated.html"
+      entries:
+      - title: Catégories de conformité des clusters
+        url: "/health-checker/reference-cluster-compliance-categories.html"
+      - title: Catégories de conformité des SVM
+        url: "/health-checker/reference-svm-compliance-categories.html"
+      - title: Catégories de conformité des volumes
+        url: "/health-checker/reference-volume-compliance-categories.html"
+    - title: Que signifie pas conforme
+      url: "/health-checker/concept-what-does-not-compliant-mean.html"
+    - title: Affichage de l'état de sécurité général du cluster
+      url: "/health-checker/task-viewing-high-level-cluster-security-status.html"
+    - title: Affichage de l'état de sécurité détaillé pour les clusters et les SVM
+      url: "/health-checker/task-viewing-detailed-security-status-for-clusters-and-svms.html"
+    - title: Affichage des événements de sécurité qui peuvent nécessiter des mises
+        à jour logicielles ou micrologicielles
+      url: "/health-checker/task-viewing-security-events-that-may-require-software-or-firmware-updates.html"
+    - title: Affichage de la façon dont l'authentification utilisateur est gérée sur
+        tous les clusters
+      url: "/health-checker/task-viewing-how-user-authentication-is-being-managed-on-all-clusters.html"
+    - title: Affichage de l'état de chiffrement de tous les volumes
+      url: "/health-checker/task-viewing-the-encryption-status-of-all-volumes.html"
+    - title: Affichage de tous les événements de sécurité actifs
+      url: "/health-checker/task-viewing-all-security-events.html"
+    - title: Ajout d'alertes pour les événements de sécurité
+      url: "/health-checker/task-adding-alerts-for-security-events.html"
+    - title: Désactivation d'événements de sécurité spécifiques
+      url: "/health-checker/task-disabling-specific-security-events.html"
+    - title: Événements de sécurité
+      url: "/health-checker/reference-security-events.html"
+  - title: La gestion des opérations de sauvegarde et de restauration
+    pdf-filename: Gestion des opérations de sauvegarde et de restauration (intégrité
+      du cluster)
+    url: "/health-checker/concept-managing-backup-and-restore-operations.html"
+    entries:
+    - title: Sauvegarde et restauration de Unified Manager sur l'appliance virtuelle
+      url: "/health-checker/concept-backup-and-restore-on-virtual-appliance.html"
+    - title: Sauvegarde et restauration à l'aide d'un vidage de base de données MySQL
+      pdf-filename: Sauvegarde et restauration à l'aide d'un dump de base de données
+        MySQL (cluster Health)
+      url: "/health-checker/concept-backup-and-restore-using-a-mysql-database-dump.html"
+      entries:
+      - title: Configuration de la destination et de la planification pour les sauvegardes
+          de vidage de base de données
+        url: "/health-checker/concept-configuring-the-destination-and-schedule-for-database-dump-backups.html"
+      - title: Qu'est-ce qu'une restauration de base de données
+        url: "/health-checker/concept-what-a-database-restore-is.html"
+      - title: Restauration d'une sauvegarde de base de données MySQL sur un système
+          Linux
+        url: "/health-checker/task-restoring-a-mysql-database-backup-on-red-hat-enterprise-linux-or-centos.html"
+      - title: Restauration d'une sauvegarde de base de données MySQL sous Windows
+        url: "/health-checker/task-restoring-a-mysql-database-backup-on-windows.html"
+    - title: Sauvegarde et restauration à l'aide des copies NetApp snapshots
+      pdf-filename: Sauvegarde et restauration à l'aide de snapshots NetApp (santé
+        du cluster)
+      url: "/health-checker/concept-backup-and-restore-using-netapp-snapshots.html"
+      entries:
+      - title: Configuration de la sauvegarde sous Linux
+        pdf-filename: Configuration de la sauvegarde sous Linux (cluster Health)
+        url: "/health-checker/concept-configuring-backup-for-linux.html"
+        entries:
+        - title: Configuration de l'emplacement de sauvegarde du snapshot
+          url: "/health-checker/task-creating-the-volume-where-backups-are-stored.html"
+        - title: Spécification de l'emplacement de destination des sauvegardes Snapshot
+          url: "/health-checker/task-specifying-the-destination-location-for-snapshot-backups.html"
+      - title: Configuration de la sauvegarde sous Windows
+        pdf-filename: Configuration de la sauvegarde sous Windows (intégrité du cluster)
+        url: "/health-checker/concept-configuring-backup-for-windows.html"
+        entries:
+        - title: Configuration de l'emplacement de sauvegarde pour Windows
+          url: "/health-checker/task-configuring-the-backup-location-for-windows-snapshot-backup.html"
+        - title: Configuration du cluster ONTAP
+          url: "/health-checker/reference-configuring-ontap-cluster.html"
+        - title: Configuration de l'ordinateur hôte Windows
+          url: "/health-checker/task-configuring-windows-host-machine.html"
+        - title: Spécification de l'emplacement de destination des sauvegardes Snapshot
+            Windows
+          url: "/health-checker/task-specifying-the-destination-location-for-windows-snapshot-backups.html"
+      - title: Configuration de la sauvegarde NetApp Snapshot à partir de la console
+          de maintenance
+        url: "/health-checker/task-configuring-netapp-snapshot-backup-from-maintenance-console.html"
+      - title: Définition d'un planning de sauvegarde pour Linux et Windows
+        url: "/health-checker/task-defining-a-schedule-for-snapshot-backups.html"
+      - title: Restauration d'une sauvegarde Snapshot pour Linux et Windows
+        url: "/health-checker/task-restoring-a-snapshot-backup.html"
+      - title: Modification du type de sauvegarde
+        url: "/health-checker/task-unconfiguring-netapp-snapshot-backup.html"
+    - title: Sauvegarde à la demande pour Unified Manager
+      url: "/health-checker/concept-on-demand-backup-for-unified-manger.html"
+    - title: Migration d'une appliance virtuelle Unified Manager vers un système Linux
+      url: "/health-checker/task-migrating-a-unified-manager-virtual-appliance-to-a-rhel-or-centos-system.html"
+  - title: Gestion des scripts
+    pdf-filename: Gestion des scripts (intégrité du cluster)
+    url: "/health-checker/concept-managing-scripts.html"
+    entries:
+    - title: Fonctionnement des scripts avec les alertes
+      url: "/health-checker/concept-how-scripts-work-with-alerts.html"
+    - title: Ajout de scripts
+      url: "/health-checker/task-adding-scripts.html"
+    - title: Suppression de scripts
+      url: "/health-checker/task-deleting-scripts.html"
+    - title: Exécution du script de test
+      url: "/health-checker/task-testing-script-execution.html"
+  - title: Gestion et suivi des groupes
+    pdf-filename: Gestion et contrôle des groupes (santé du cluster)
+    url: "/health-checker/concept-managing-and-monitoring-groups.html"
+    entries:
+    - title: Présentation des groupes
+      pdf-filename: Présentation des groupes (santé du cluster)
+      url: "/health-checker/concept-understanding-groups.html"
+      entries:
+      - title: Qu'est-ce qu'un groupe
+        url: "/health-checker/concept-what-a-group-is.html"
+      - title: Fonctionnement des règles de groupe pour les groupes
+        url: "/health-checker/concept-how-group-rules-work-for-groups.html"
+      - title: Fonctionnement des actions de groupe sur les objets de stockage
+        url: "/health-checker/concept-how-group-actions-work-on-storage-objects.html"
+    - title: Ajout de groupes
+      url: "/health-checker/task-adding-groups.html"
+    - title: Modification de groupes
+      url: "/health-checker/task-editing-the-group-settings.html"
+    - title: Suppression de groupes
+      url: "/health-checker/task-deleting-groups.html"
+    - title: Ajout de règles de groupe
+      url: "/health-checker/task-adding-group-rules.html"
+    - title: Modification des règles de groupe
+      url: "/health-checker/task-editing-group-rules.html"
+    - title: Suppression de règles de groupe
+      url: "/health-checker/task-deleting-group-rules.html"
+    - title: Ajout d'actions de groupe
+      url: "/health-checker/task-adding-group-actions.html"
+    - title: Modification des actions de groupe
+      url: "/health-checker/task-editing-group-actions.html"
+    - title: Configuration des seuils d'intégrité des volumes pour les groupes
+      url: "/health-checker/task-configuring-volume-health-thresholds-for-groups.html"
+    - title: Suppression des actions de groupe
+      url: "/health-checker/task-deleting-group-actions.html"
+    - title: Réorganisation des actions de groupe
+      url: "/health-checker/task-reordering-group-actions.html"
+  - title: Hiérarchiser les événements d'objet de stockage à l'aide d'annotations
+    url: "/health-checker/concept-prioritizing-storage-objects-using-annotations.html"
+    entries:
+    - title: En savoir plus sur les annotations
+      url: "/health-checker/concept-understanding-more-about-annotations.html"
+      entries:
+      - title: Quelles sont les annotations
+        url: "/health-checker/concept-what-annotations-are.html"
+      - title: Fonctionnement des règles d'annotation dans Unified Manager
+        url: "/health-checker/concept-how-annotation-rules-work-in-unified-manager.html"
+      - title: Description des valeurs d'annotation prédéfinies
+        url: "/health-checker/reference-description-of-predefined-annotation-values.html"
+    - title: Ajout dynamique d'annotations
+      url: "/health-checker/task-adding-annotations-dynamically.html"
+    - title: Ajout de valeurs aux annotations
+      url: "/health-checker/task-adding-values-to-annotations.html"
+    - title: Suppression d'annotations
+      url: "/health-checker/task-deleting-annotations.html"
+    - title: Affichage de la liste d'annotations et des détails
+      url: "/health-checker/task-viewing-the-annotation-list-and-details.html"
+    - title: Suppression de valeurs des annotations
+      url: "/health-checker/task-deleting-values-from-annotations.html"
+    - title: Création de règles d'annotation
+      url: "/health-checker/task-creating-annotation-rules.html"
+    - title: Ajout manuel d'annotations à des objets de stockage individuels
+      url: "/health-checker/task-adding-annotations-manually-to-individual-storage-objects.html"
+    - title: Modification des règles d'annotation
+      url: "/health-checker/task-editing-annotation-rules.html"
+    - title: Configuration des conditions pour les règles d'annotation
+      url: "/health-checker/task-configuring-conditions-for-annotation-rules.html"
+    - title: Suppression de règles d'annotation
+      url: "/health-checker/task-deleting-annotation-rules.html"
+    - title: Réorganisation des règles d'annotation
+      url: "/health-checker/task-reordering-annotation-rules.html"
+  - title: Gestion des paramètres d'authentification SAML
+    pdf-filename: Gestion des paramètres d'authentification SAML (intégrité du cluster)
+    url: "/health-checker/concept-managing-saml-authentication-settings-um.html"
+    entries:
+    - title: Exigences du fournisseur d'identités
+      url: "/health-checker/reference-identity-provider-requirements-um.html"
+    - title: Activation de l'authentification SAML
+      url: "/health-checker/task-enabling-saml-authentication-um.html"
+    - title: Modification du fournisseur d'identités utilisé pour l'authentification
+        SAML
+      url: "/health-checker/task-changing-the-identity-provider-idp-used-for-saml-authentication-um.html"
+    - title: Mise à jour des paramètres d'authentification SAML après une modification
+        du certificat de sécurité Unified Manager
+      url: "/health-checker/task-updating-saml-authentication-settings-after-unified-manager-certificate-change.html"
+    - title: Désactivation de l'authentification SAML
+      url: "/health-checker/task-disabling-saml-authentication-um.html"
+    - title: Désactivation de l'authentification SAML à partir de la console de maintenance
+      url: "/health-checker/task-disabling-saml-authentication-from-the-maintenance-console-um.html"
+  - title: Envoi d'un bundle via l'interface utilisateur Web et la console de maintenance
+    url: "/health-checker/task-send-a-support-bundle-to-technical-support.html"
+    entries:
+    - title: Envoi des messages AutoSupport et des packs de support au support technique
+      url: "/health-checker/reference-setup-autosupport-page.html"
+    - title: Accès à la console de maintenance
+      url: "/health-checker/task-accessing-the-maintenance-console.html"
+    - title: Génération et téléchargement d'un bundle de support
+      url: "/health-checker/task-generating-and-uploading-a-support-bundle.html"
+    - title: Récupération du bundle de support à l'aide d'un client Windows
+      url: "/health-checker/task-retrieving-the-support-bundle-using-a-windows-client.html"
+    - title: Récupération du bundle de support à l'aide d'un client UNIX ou Linux
+      url: "/health-checker/task-retrieving-the-support-bundle-using-a-unix-or-linux-client.html"
+    - title: Envoi d'un pack support au support technique
+      url: "/health-checker/task-sending-a-support-bundle-to-technical-support.html"
+  - title: Tâches et informations relatives à plusieurs flux de travail
+    url: "/health-checker/concept-tasks-and-information-related-to-several-workflows.html"
+    entries:
+    - title: Ajout et révision de notes sur un événement
+      url: "/health-checker/task-adding-and-reviewing-notes-about-an-event.html"
+    - title: Attribution d'événements à des utilisateurs spécifiques
+      url: "/health-checker/task-assigning-events-to-specific-users.html"
+    - title: Confirmation et résolution des événements
+      url: "/health-checker/task-acknowledging-and-resolving-events.html"
+    - title: Page de détails de l'événement
+      pdf-filename: Page des détails de l'événement (cluster Health)
+      url: "/health-checker/reference-event-details-page.html"
+      entries:
+      - title: La section informations sur les événements s'affiche
+        url: "/health-checker/reference-what-the-event-information-section-displays.html"
+      - title: Ce que la section diagnostic du système affiche
+        url: "/health-checker/reference-what-the-system-diagnosis-section-displays.html"
+      - title: Ce que la section actions suggérées affiche
+        url: "/health-checker/reference-what-the-suggested-actions-section-displays.html"
+    - title: Description des types de gravité d'événement
+      url: "/health-checker/reference-description-of-event-severity-types.html"
+    - title: Description des niveaux d'impact d'événement
+      url: "/health-checker/reference-description-of-event-impact-levels.html"
+    - title: Description des zones d'impact de l'événement
+      url: "/health-checker/reference-description-of-event-impact-areas.html"
+    - title: Les composants du cluster et les conflits
+      url: "/health-checker/concept-cluster-components-and-why-they-can-be-in-contention.html"
+    - title: Page de détails sur le volume / la santé
+      url: "/health-checker/reference-health-volume-details-page.html"
+    - title: VM de stockage / page de détails d'intégrité
+      url: "/health-checker/reference-health-svm-details-page.html"
+    - title: Page Cluster / Health Details
+      url: "/health-checker/reference-health-cluster-details-page.html"
+    - title: Page Détails de l'agrégat/de l'intégrité
+      url: "/health-checker/reference-health-aggregate-details-page.html"
+    - title: Ajout d'utilisateurs
+      url: "/health-checker/task-adding-users.html"
+    - title: Création d'un utilisateur de base de données
+      url: "/health-checker/task-creating-a-database-user.html"
+    - title: Définitions des types d'utilisateur
+      url: "/health-checker/reference-definitions-of-user-types.html"
+    - title: Fonctionnalités et rôles utilisateur de Unified Manager
+      url: "/health-checker/reference-unified-manager-roles-and-capabilities.html"
+    - title: Génération d'un certificat de sécurité HTTPS
+      url: "/health-checker/task-generating-an-https-security-certificate-ocf.html"
+    - title: Commandes CLI Unified Manager prises en charge
+      url: "/health-checker/reference-supported-unified-manager-cli-commands.html"
+- title: Qu'est-ce qu'une fenêtre de maintenance Unified Manager
+  pdf-filename: Qu'est-ce qu'une fenêtre de maintenance Unified Manager (cluster Health)
+  url: "/health-checker/concept-what-a-um-maintenance-window-is.html"
+  entries:
+  - title: Planification d'une fenêtre de maintenance pour désactiver les notifications
+      d'événements du cluster
+    url: "/health-checker/task-scheduling-a-maintenance-window-to-disable-cluster-event-notifications.html"
+  - title: Modification ou annulation d'une fenêtre de maintenance planifiée
+    url: "/health-checker/task-changing-or-canceling-a-scheduled-maintenance-window.html"
+  - title: Affichage des événements qui se sont produits lors d'une fenêtre de maintenance
+    url: "/health-checker/task-viewing-events-that-occurred-during-a-maintenance-window.html"

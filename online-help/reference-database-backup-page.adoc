@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-database-backup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page sauvegarde de la base de données affiche la liste des sauvegardes créées par Unified Manager et fournit des informations sur le nom, la taille et l"heure de création de la sauvegarde.' 
+---
+= Page sauvegarde de base de données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page sauvegarde de la base de données affiche la liste des sauvegardes créées par Unified Manager et fournit des informations sur le nom, la taille et l'heure de création de la sauvegarde.
+
+Vous devez avoir le rôle Administrateur d'applications ou Administrateur de stockage.
+
+
+
+== Vue liste
+
+La vue liste affiche des informations sur les fichiers de sauvegarde disponibles.
+
+* *Nom*
++
+Nom de la sauvegarde.
+
+* *Taille*
++
+Taille de la sauvegarde.
+
+* *Heure de création*
++
+Date et heure de création de la sauvegarde.
+
+
+
+
+
+== Boutons de commande
+
+* *Paramètres de sauvegarde*
++
+Affiche la boîte de dialogue Paramètres de sauvegarde, qui vous permet de spécifier un chemin de sauvegarde, un nombre de rétention et un planning de sauvegarde.
+
+

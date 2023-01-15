@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-scheduled-reports-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La page programmes de rapport vous permet d"afficher des informations détaillées sur les rapports que vous avez créés et le planning à partir duquel ils sont générés. Vous pouvez rechercher un rapport spécifique, modifier certains attributs d"un planning de rapport et supprimer un planning de rapport.' 
+---
+= Page programmes de rapport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page programmes de rapport vous permet d'afficher des informations détaillées sur les rapports que vous avez créés et le planning à partir duquel ils sont générés. Vous pouvez rechercher un rapport spécifique, modifier certains attributs d'un planning de rapport et supprimer un planning de rapport.
+
+La page programmes de rapport affiche la liste des rapports qui ont été créés sur le système.
+
+* *Nom de l'annexe*
++
+Nom du rapport planifié. Initialement, ce nom inclut le nom de la vue et la fréquence. Vous pouvez modifier ce nom pour mieux refléter le contenu du rapport.
+
+* *Affichage*
++
+Vue utilisée pour créer le rapport.
+
+* *Destinataires*
++
+Adresses e-mail des utilisateurs qui recevront le rapport généré. Chaque adresse e-mail doit être séparée par une virgule.
+
+* *Fréquence*
++
+Fréquence à laquelle le rapport est généré et envoyé aux destinataires.
+
+* *Format*
++
+Indique si le rapport est généré au format PDF ou XLSX ou CSV.
+
+* *Bouton action*
++
+Options disponibles pour modifier ou supprimer le planning de rapport.
+
+

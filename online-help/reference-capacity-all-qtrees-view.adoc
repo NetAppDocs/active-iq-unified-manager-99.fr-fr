@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-capacity-all-qtrees-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La vue capacité : tous les qtrees vous permettent d"afficher des informations sur la capacité et l"utilisation des qtrees dans tous les clusters. Ces informations vous permettent de comprendre les risques de capacité possibles ainsi que le pourcentage et le nombre de fichiers des disques configurés et utilisés.' 
+---
+= Capacité : vue de tous les qtrees
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vue capacité : tous les qtrees vous permettent d'afficher des informations sur la capacité et l'utilisation des qtrees dans tous les clusters. Ces informations vous permettent de comprendre les risques de capacité possibles ainsi que le pourcentage et le nombre de fichiers des disques configurés et utilisés.
+
+Par défaut, les objets des pages de vue sont triés en fonction de la criticité de l'événement. Les objets avec des événements critiques sont répertoriés en premier et les objets avec des événements d'avertissement sont répertoriés en second. Cela fournit une indication visuelle immédiate des problèmes à résoudre.
+
+Les commandes situées en haut de la page vous permettent de sélectionner une vue particulière (pour l'intégrité, les performances, la capacité, etc.), d'effectuer des recherches pour localiser des objets spécifiques, de créer et d'appliquer des filtres pour restreindre la liste des données affichées, ajouter/supprimer/réorganiser des colonnes sur la page, et exportez les données de la page vers un `.csv`, `.pdf`, ou `.xlsx` fichier. Après avoir personnalisé la page, vous pouvez enregistrer les résultats sous forme de vue personnalisée, puis planifier régulièrement un rapport de ces données à générer et à envoyer par e-mail.
+
+Vous pouvez personnaliser les paramètres de seuil de capacité pour un ou plusieurs qtrees en utilisant le bouton *Edit Threshold*.
+
+Voir xref:reference-qtree-capacity-fields.adoc[Champs de capacité qtree] pour la description de tous les champs de cette page.

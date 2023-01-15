@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-uploading-a-new-active-iq-rules-file.html 
+sidebar: sidebar 
+keywords: Active IQ,rules file 
+summary: 'Unified Manager recherche automatiquement un nouveau fichier de règles Active IQ et télécharge un nouveau fichier dès qu"il existe de nouvelles règles. Cependant, sur les sites sans accès réseau externe, vous devez télécharger le fichier de règles manuellement.' 
+---
+= Téléchargement d'un nouveau fichier de règles Active IQ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager recherche automatiquement un nouveau fichier de règles Active IQ et télécharge un nouveau fichier dès qu'il existe de nouvelles règles. Cependant, sur les sites sans accès réseau externe, vous devez télécharger le fichier de règles manuellement.
+
+
+
+== Avant de commencer
+
+* Le reporting sur les événements Active IQ doit être activé.
+* Vous devez télécharger le fichier de règles depuis le site de support NetApp.
+
+
+
+
+== Description de la tâche
+
+Il est recommandé de télécharger un nouveau fichier de règles environ une fois par mois pour assurer la protection de vos systèmes de stockage et leur fonctionnement optimal. Le fichier de règles se trouve à l'adresse suivante : http://mysupport.netapp.com/NOW/public/unified_manager/bin/secure_rules.zip[]
+
+
+
+== Étapes
+
+. Sur un ordinateur disposant d'un accès réseau, accédez au site de support NetApp et téléchargez les règles en vigueur `.zip` fichier.
+. Transférez le fichier de règles sur un support que vous pouvez apporter dans la zone sécurisée, puis copiez-le sur un système de la zone sécurisée.
+. Dans le volet de navigation de gauche, cliquez sur *Storage Management* > *Event Setup*.
+. Dans la page *Event Setup*, cliquez sur le bouton *Upload Rules*.
+. Dans la boîte de dialogue *règles de chargement*, accédez aux règles et sélectionnez-les `.zip` Fichier que vous avez téléchargé et cliquez sur *Upload*.
++
+Ce processus peut prendre quelques minutes.
+
+
+
+
+
+== Résultats
+
+Le fichier de règles est décompressé sur le serveur Unified Manager. Une fois que vos clusters gérés ont généré un fichier AutoSupport après minuit, Unified Manager vérifie les clusters par rapport au fichier de règles et génère de nouveaux risques et incidents, le cas échéant.

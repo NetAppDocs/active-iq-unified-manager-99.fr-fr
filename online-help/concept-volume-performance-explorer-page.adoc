@@ -1,0 +1,61 @@
+---
+permalink: online-help/concept-volume-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Cette page fournit des informations détaillées sur les performances d"un volume dans un cluster. Le titre de cette page dépend que vous visualisez un volume FlexVol ou FlexGroup.' 
+---
+= Page Explorateur de volumes/performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cette page fournit des informations détaillées sur les performances d'un volume dans un cluster. Le titre de cette page dépend que vous visualisez un volume FlexVol ou FlexGroup.
+
+La page de l'explorateur de volumes/performances vous permet de suivre et de comparer les performances du volume sur une période donnée, ce qui vous aide à résoudre les problèmes et à régler les performances de votre volume.
+
+[NOTE]
+====
+Les volumes racine ne sont pas affichés sur cette page.
+
+====
+Utilisation de la fonctionnalité Afficher et Comparer :
+
+* Pour les volumes FlexVol, vous pouvez comparer les performances de ce volume avec :
++
+** autres volumes du même agrégat
+** Autres volumes qui font partie du même groupe de règles de QoS
+** l'agrégat sur lequel réside ce volume
+** Machine virtuelle de stockage sur laquelle réside ce volume
+** Les LUN qui sont sur ce volume
+
+
+* Pour les volumes FlexGroup, vous pouvez comparer les performances de cette FlexGroup avec :
++
+** Agrégats sur lesquels réside la FlexGroup
+** La VM de stockage sur laquelle réside le FlexGroup
+** Les volumes constitutifs du FlexGroup
+
+
+
+
+Les statistiques des graphiques sont mises à jour après chaque période de collecte, qui est par défaut toutes les 5 minutes. Le sélecteur Afficher les statistiques dans fournit une option permettant d'afficher les statistiques moyennes sur l'heure précédente. Cette fonctionnalité vous permet d'afficher le graphique de latence en prise en charge du programme NetApp de garantie des performances.
+
+Avec la page de l'explorateur de volumes/performances, vous pouvez :
+
+* Afficher les problèmes liés aux seuils et leurs détails
+* Suivez et comparez les données de performances du volume
+* Examiner et résoudre les problèmes liés aux seuils
+* Examiner et résoudre les problèmes de performances
+* Lancez System Manager pour modifier la configuration du volume
++
+Le bouton *configurer le volume* est disponible si vous êtes connecté à Unified Manager avec le rôle Administrateur d'applications ou Administrateur de stockage et avec ONTAP 9.5 ou une version ultérieure.
+
+
+
+[NOTE]
+====
+Pour les volumes DP (Data protection), seules les valeurs de compteur du trafic généré par les utilisateurs sont affichées.
+
+====

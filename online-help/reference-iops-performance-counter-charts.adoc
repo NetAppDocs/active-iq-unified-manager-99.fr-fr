@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-iops-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les diagrammes des compteurs d"IOPS affichent le nombre d"opérations d"entrée/sortie traitées par seconde par l"objet de stockage sélectionné.' 
+---
+= Graphiques des compteurs de performances d'IOPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les diagrammes des compteurs d'IOPS affichent le nombre d'opérations d'entrée/sortie traitées par seconde par l'objet de stockage sélectionné.
+
+La fenêtre contextuelle qui s'affiche lorsque vous déplacez le curseur dans la zone du graphique affiche les valeurs de compteur à des moments spécifiques.
+
+Lorsqu'elles sont affichées dans la vue Zoom, les diagrammes d'opérations d'entrée/sortie par seconde du volume et de la LUN affichent également les paramètres de seuil de débit maximum et minimum de la qualité de service (QoS), s'ils sont configurés. Les graphiques IOPS/To affichent les paramètres de pic de QoS et de seuil de débit attendus, si les règles de QoS adaptative sont configurées.
+
+[NOTE]
+====
+Dans certains cas, lorsque des règles de QoS adaptative sont utilisées, les valeurs maximale et minimale sont définies sur la même valeur dans les graphiques. Cela se produit sur de grands volumes où l'espace est très faible, ou sur de très petits volumes.
+
+====
+Lors de l'affichage d'un volume ou d'une LUN qui partage les IOPS d'une politique de QoS partagée, une ligne pour « IOPS totales de la charge de travail » est affichée pour afficher les IOPS utilisées par toutes les autres charges de travail qui partagent cette politique.
+
+Le bas de la page du graphique affiche les informations relatives aux IOPS minimum, maximum, moyen et 95e percentile pour cet objet sur la plage de temps sélectionnée.
+
+Il existe quatre types de graphiques relatifs aux IOPS :
+
+
+
+== IOPS - Tableau compteur total
+
+Affiche le nombre d'opérations d'entrée/sortie traitées par seconde.
+
+Lorsqu'elle est affichée pour un nœud, la sélection « Total » affiche les IOPS des données déplacées à travers ce nœud qui peuvent résider sur le nœud local ou distant et que la sélection « Total (local) » affiche les IOPS pour les données qui résident uniquement sur le nœud actuel.
+
+
+
+== IOPS : tableau des compteurs
+
+Affiche les mêmes données IOPS séparées en lecture, en écriture et en autres IOPS.
+
+Cette option de graphique s'applique lorsque l'objet sélectionné est un SVM, un nœud, un agrégat, un volume ou une LUN.
+
+Lorsqu'elle est affichée pour un nœud, la sélection « détail » affiche la ventilation des IOPS pour les données déplacées à travers ce nœud, qui peut résider sur le nœud local ou distant, et la sélection « analyse (locale) » affiche la répartition des IOPS pour les données résidant uniquement sur le nœud actuel.
+
+
+
+== IOPS - diagramme compteur protocoles
+
+Affiche les mêmes données IOPS, mais pour les SVM, les données de performance sont séparées en composants individuels pour le trafic de protocole CIFS, NFS, FCP, NVMe et iSCSI.
+
+
+
+== IOPS/To : tableau compteur total
+
+Affiche le nombre d'opérations d'entrée/sortie traitées par seconde en fonction de l'espace logique total utilisé par le volume, en téraoctets. Également appelé densité des E/S, ce compteur mesure le niveau de performances qu'une quantité donnée de capacité de stockage peut fournir.
+
+Cette option de graphique est disponible uniquement lorsque l'objet sélectionné est un volume. Elle affiche les données de performances uniquement lorsque la capacité logique utilisée par le volume est supérieure ou égale à 128 Go. Les espaces s'affichent dans le tableau lorsque la capacité utilisée est inférieure à 128 Go pendant la période sélectionnée.
+
+
+
+== *Bouton Zoom View*
+
+Affiche une vue agrandie des données du compteur.
+
+* Événements
++
+L'occurrence d'événements critiques, d'erreur, d'avertissement et d'information est indiquée sur les lignes de temps au-dessus des graphiques.
+
+* Seuils
++
+La ligne horizontale en pointillés correspond à la valeur de seuil d'avertissement d'utilisation définie dans Unified Manager.
+
++
+La ligne rouge fixe indique la valeur du seuil critique d'utilisation définie dans Unified Manager.
+
+* Compteurs
++
+Les compteurs du volet gauche indiquent les valeurs de compteur affichées. Désélection ou sélection du image:../media/eye-icon.gif[""] Cette option est associée à un compteur. Elle masque et affiche les informations relatives aux compteurs fournies dans le graphique, et peut vous aider lors de la comparaison des IOPS d'objet.
+
+

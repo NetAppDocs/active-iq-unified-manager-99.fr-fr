@@ -1,0 +1,58 @@
+---
+permalink: data-protection/reference-protection-storage-virtual-machine-associations-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La page des pairs SVM vous permet de voir vos pairs de machines virtuelles de stockage existantes entre machines virtuelles de stockage source et cible, et de créer de nouvelles machines virtuelles de stockage que les applications partenaires utilisent pour créer des relations SnapMirror et SnapVault. 
+---
+= Page SVM pairs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page des pairs SVM vous permet de voir vos pairs de machines virtuelles de stockage existantes entre machines virtuelles de stockage source et cible, et de créer de nouvelles machines virtuelles de stockage que les applications partenaires utilisent pour créer des relations SnapMirror et SnapVault.
+
+
+
+== Boutons de commande
+
+Les boutons de commande permettent d'effectuer les tâches suivantes :
+
+* *Créer*
++
+Ouvre la page Créer des homologues de la machine virtuelle de stockage.
+
+* *Supprimer*
++
+Permet de supprimer les pairs de machine virtuelle de stockage sélectionnés.
+
+
+
+
+
+== Liste des pairs pour les machines virtuelles de stockage
+
+La liste des pairs de SVM affiche dans une table les associations VM de stockage source et de destination qui ont été créées et le type de relation de protection autorisée pour chaque association.
+
+* *Source Storage Virtual machine*
++
+Affiche le nom du SVM source.
+
+* *Cluster source*
++
+Affiche le nom du cluster source.
+
+* *Machine virtuelle de stockage de destination*
++
+Affiche le nom du SVM de destination.
+
+* *Cluster de destination*
++
+Affiche le nom du cluster de destination.
+
+* *Type*
++
+Affiche le type de relation de protection. Les types de relation sont SnapMirror ou SnapVault.
+
+

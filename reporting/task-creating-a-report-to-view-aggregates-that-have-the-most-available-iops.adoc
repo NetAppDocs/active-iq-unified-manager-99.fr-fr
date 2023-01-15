@@ -1,0 +1,94 @@
+---
+permalink: reporting/task-creating-a-report-to-view-aggregates-that-have-the-most-available-iops.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Ce rapport indique les agrégats qui disposent des IOPS par type d"agrégat les plus disponibles, sur lesquels vous pouvez provisionner de nouvelles charges de travail.' 
+---
+= Créez un rapport pour afficher les agrégats dont les IOPS sont les plus disponibles
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ce rapport indique les agrégats qui disposent des IOPS par type d'agrégat les plus disponibles, sur lesquels vous pouvez provisionner de nouvelles charges de travail.
+
+
+
+== Avant de commencer
+
+* Vous devez avoir le rôle Administrateur d'applications ou Administrateur de stockage.
+
+
+
+
+== Description de la tâche
+
+Procédez comme suit pour ouvrir une vue Santé : tous les volumes, télécharger la vue dans Excel, créer un graphique des capacités disponibles, télécharger le fichier Excel personnalisé et planifier le rapport final.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Storage* > *Aggregates*.
+. Sélectionnez *Performance : tous les agrégats* dans la liste déroulante *View*.
+. Sélectionnez *Afficher/Masquer* pour afficher le `Available IOPS` et masquer le `Cluster FQDN`, `Inactive Data Reporting`, et `Threshold Policy` colonnes.
+. Faites glisser et déposez le `Available IOPS` et `Free Capacity` colonnes à côté de `Type` colonne.
+. Nommer et enregistrer la vue personnalisée `Available IOPS Per Aggr`.
+. Sélectionnez *Rapports* > *Télécharger Excel*.
++
+image::../media/download-excel-menu.png[téléchargez le menu excel]
+
++
+Selon votre navigateur, vous devrez peut-être cliquer sur *OK* pour enregistrer le fichier.
+
+. Si nécessaire, cliquez sur *Activer la modification*.
+. Dans Excel, ouvrez le fichier téléchargé.
+. Sur le `data` cliquez sur le petit triangle en haut à gauche de la feuille pour sélectionner la feuille entière.
+. Dans le ruban *Data*, sélectionnez *Trier* dans `Sort & Filter` de service.
+. Définissez les niveaux de tri suivants :
++
+.. Spécifiez le *Trier par* comme `Available IOPS (IOPS)`, Le *Trier sur* comme `Cell Values`, Et le *ordre* comme `Largest to Smallest`.
+.. Cliquez sur *Ajouter niveau*.
+.. Spécifiez le *Trier par* comme `Type`, Le *Trier sur* comme `Cell Values`, Et le *ordre* comme `Z to A`.
+.. Cliquez sur *Ajouter niveau*.
+.. Spécifiez le *Trier par* comme `Free Capacity (GB)`, Le *Trier sur* comme `Cell Values`, Et le *ordre* comme `Largest to Smallest`.
+.. Cliquez sur *OK*.
+
+
+. Enregistrez et fermez le fichier Excel.
+. Dans Unified Manager, sélectionnez *Rapports* > *Upload Excel*.
++
+[NOTE]
+====
+Assurez-vous que vous vous trouvez dans la même vue que celle où vous avez téléchargé le fichier Excel.
+
+====
+. Dans ce cas, sélectionnez le fichier Excel que vous avez modifié `performance-aggregates-<date>.xlsx`.
+. Cliquez sur *Ouvrir*.
+. Cliquez sur *soumettre*.
++
+Une coche apparaît en regard de l'option de menu *Rapports* > *Télécharger Excel*.
+
++
+image::../media/upload-excel.png[télécharger excel]
+
+. Cliquez sur *Rapports planifiés*.
+. Cliquez sur *Add Schedule* pour ajouter une nouvelle ligne à la page *Report Schedules* afin que vous puissiez définir les caractéristiques du planning pour le nouveau rapport.
+. Entrez un nom pour le planning du rapport et remplissez les autres champs du rapport, puis cliquez sur la coche (image:../media/blue-check.gif[""]) à la fin du rang.
++
+[NOTE]
+====
+Sélectionnez le format *XLSX* pour le rapport.
+
+====
++
+Le rapport est envoyé immédiatement sous forme de test. Ensuite, le rapport génère et est envoyé par e-mail aux destinataires répertoriés à l'aide de la fréquence spécifiée.
+
+
+
+
+
+== Une fois que vous avez terminé
+
+En fonction des résultats présentés dans ce rapport, vous pouvez provisionner de nouveaux workloads sur les agrégats disposant des valeurs d'IOPS les plus élevées.

@@ -1,0 +1,159 @@
+---
+permalink: online-help/reference-volume-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les champs suivants sont disponibles dans la vue capacité : tous les volumes et peuvent être utilisés dans des vues personnalisées et dans des rapports.' 
+---
+= Champs de capacité de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les champs suivants sont disponibles dans la vue capacité : tous les volumes et peuvent être utilisés dans des vues personnalisées et dans des rapports.
+
+* *Volume*
++
+Nom du volume.
+
+* *Taux de croissance quotidien %*
++
+Taux de croissance qui se produit toutes les 24 heures dans le volume.
+
+* *Jours à plein*
++
+Nombre estimé de jours restants avant que le volume n'atteigne sa capacité maximale.
+
+* *Données disponibles %*
++
+Capacité de données disponible dans un volume en pourcentage.
+
+* *Capacité de données disponible*
++
+Capacité de données disponible dans un volume.
+
+* *Données utilisées %*
++
+Données utilisées dans un volume en pourcentage.
+
+* *Capacité de données utilisée*
++
+Capacité de données utilisée dans un volume.
+
+* *Capacité de données totale*
++
+Capacité de données totale (utilisée plus disponible) dans un volume.
+
+* *Espace logique utilisé*
++
+L'espace logique utilisé par les données de ce volume sans appliquer les économies résultant de l'utilisation des technologies d'efficacité du stockage ONTAP.
+
+* *Dépassement de capacité de l'instantané %*
++
+Pourcentage d'espace de données utilisé par les copies Snapshot.
+
+* *Réserve Snapshot disponible %*
++
+Quantité d'espace disponible pour les copies Snapshot du volume sous forme de pourcentage.
+
+* *Capacité disponible de réserve Snapshot*
++
+Quantité d'espace disponible pour les copies Snapshot dans le volume.
+
+* *La réserve Snapshot utilisée %*
++
+Quantité d'espace utilisée par les copies Snapshot du volume sous forme de pourcentage.
+
+* *Capacité utilisée de réserve Snapshot*
++
+Quantité d'espace utilisée par les copies Snapshot dans le volume.
+
+* *Capacité totale de la réserve Snapshot*
++
+Affiche la capacité totale de la copie Snapshot dans le volume.
+
+* *Quota engagé capacité*
++
+Espace réservé pour les quotas du volume.
+
+* *Quota de capacité excédentaire*
++
+Quantité d'espace utilisable pour les quotas avant que le système ne génère l'événement Volume quota overvalidé.
+
+* *Nombre total d'inodes*
++
+Nombre d'inodes dans le volume.
+
+* *Inode utilisation %*
++
+Pourcentage d'espace inode utilisé dans le volume.
+
+* *Provisionnement fin*
++
+Indique si la garantie d'espace est définie pour le volume sélectionné. Les valeurs valides sont Oui et non
+
+* *Garantie d'espace*
++
+Option de garantie du stockage associée au volume.
+
+* *Croissance automatique*
++
+Indique si la taille du volume augmente automatiquement lorsqu'il manque d'espace.
+
+* *Instantané de suppression automatique*
++
+Indique si la suppression automatique des copies Snapshot est activée ou désactivée.
+
+* *Déduplication*
++
+Activation/désactivation de la déduplication pour le volume.
+
+* *Compression*
++
+Indique si la compression est activée ou désactivée pour le volume.
+
+* *État*
++
+État du volume en cours d'exportation.
+
+* *Rôle de protection*
++
+Rôle de protection défini pour le volume.
+
+* *Type SnapLock*
++
+Indique si le volume est un volume SnapLock ou non SnapLock.
+
+* *SnapLock Date d'expiration*
++
+Date d'expiration du SnapLock.
+
+* *Politique de hiérarchisation*
++
+Règle de Tiering définie pour le volume. Valide lorsqu'il est déployé uniquement sur des agrégats compatibles FabricPool.
+
+* *Politique de mise en cache*
++
+Stratégie de mise en cache associée au volume sélectionné.
+
++
+La politique fournit des informations sur la mise en cache de Flash Pool pour le volume. Voir la vue Santé : tous les volumes pour plus d'informations sur les règles de mise en cache.
+
+* *Priorité de conservation du cache*
++
+Priorité utilisée pour conserver les pools mis en cache.
+
+* *VM de stockage*
++
+Le nom du serveur virtuel de stockage (SVM) qui contient le volume.
+
+* *Cluster*
++
+Nom du cluster sur lequel réside le volume. Vous pouvez cliquer sur le nom du cluster pour accéder à la page d'informations sur l'état de santé du cluster.
+
+* *FQDN du cluster*
++
+Nom de domaine complet (FQDN) du cluster.
+
+

@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-svm-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les champs suivants sont disponibles dans la vue performances : toutes les machines virtuelles de stockage et peuvent être utilisés dans les vues personnalisées et dans les rapports.' 
+---
+= Champs de performance des VM de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les champs suivants sont disponibles dans la vue performances : toutes les machines virtuelles de stockage et peuvent être utilisés dans les vues personnalisées et dans les rapports.
+
+* *Statut*
++
+Un objet sain sans événements actifs affiche une icône de coche verte (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]). Si l'objet a un événement actif, l'icône d'indicateur d'événement identifie la gravité de l'événement : les événements critiques sont rouges (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), les événements d'erreur sont orange (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), et les événements d'avertissement sont jaunes (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]).
+
+* *VM de stockage*
++
+Vous pouvez cliquer sur le nom du SVM pour accéder à la page des détails de performance du SVM.
+
+* * Latence*
++
+Temps de réponse moyen pour toutes les demandes d'E/S, exprimé en millisecondes par opération.
+
+* *IOPS*
++
+Les opérations d'entrée/sortie par seconde pour le SVM.
+
+* *MB/s*
++
+Le débit du SVM, mesuré en mégaoctets par seconde.
+
+* *Capacité libre*
++
+Capacité de stockage inutilisée du SVM, en gigaoctets.
+
+* *Capacité totale*
++
+Capacité de stockage totale de la SVM, en gigaoctets.
+
+* *Cluster*
++
+Le cluster auquel appartient la SVM. Vous pouvez cliquer sur le nom du cluster pour accéder à la page des détails du cluster.
+
+* *FQDN du cluster*
++
+Nom de domaine complet (FQDN) du cluster.
+
+* *Politique de seuil*
++
+Règle de seuil de performances définie par l'utilisateur, ou règles actives sur cet objet de stockage Vous pouvez positionner votre curseur sur les noms de stratégie contenant des points de suspension (...) pour afficher le nom complet de la stratégie ou la liste des noms de stratégie affectés. Les boutons *affecter stratégie de seuil de performances* et *Effacer stratégie de seuil de performances* restent désactivés jusqu'à ce que vous sélectionniez un ou plusieurs objets en cliquant sur les cases situées à l'extrême gauche.
+
+

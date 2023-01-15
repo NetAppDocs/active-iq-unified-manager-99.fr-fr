@@ -1,0 +1,14 @@
+---
+permalink: reporting/concept-working-with-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Découvrez comment rechercher et personnaliser les vues de pages d"inventaire dans des rapports planifiés partageables.' 
+---
+= Utilisation des rapports
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez comment rechercher et personnaliser les vues de pages d'inventaire dans des rapports planifiés partageables.

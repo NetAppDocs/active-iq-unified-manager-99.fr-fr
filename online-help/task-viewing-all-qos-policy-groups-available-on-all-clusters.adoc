@@ -1,0 +1,27 @@
+---
+permalink: online-help/task-viewing-all-qos-policy-groups-available-on-all-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: Vous pouvez afficher la liste de tous les groupes de règles de QoS disponibles sur les clusters qui surveillent Unified Manager. Cela inclut les règles de QoS classiques, les règles de QoS adaptatives et les règles de qualité de service gérées par les règles de niveau de services du gestionnaire unifié Performance. 
+---
+= Affichage de tous les groupes de règles de QoS disponibles sur tous les clusters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher la liste de tous les groupes de règles de QoS disponibles sur les clusters qui surveillent Unified Manager. Cela inclut les règles de QoS classiques, les règles de QoS adaptatives et les règles de qualité de service gérées par les règles de niveau de services du gestionnaire unifié Performance.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *Storage* > *QoS Policy Groups*.
++
+Les performances : l'affichage classique des groupes de règles de QoS sont affichées par défaut.
+
+. Affichez les paramètres de configuration détaillés pour chaque groupe de règles de QoS traditionnel disponible.
+. Cliquez sur le bouton développer (image:../media/chevron-down.gif[""]) En regard du nom du groupe de stratégies QoS pour afficher plus de détails sur le groupe de règles.
+. Dans le menu Affichage, sélectionnez l'une des options supplémentaires pour afficher tous les groupes de règles QoS adaptatifs ou pour afficher tous les groupes de règles QoS créés à l'aide des niveaux de service Unified ManagerPerformance.
+

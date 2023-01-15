@@ -1,0 +1,54 @@
+---
+permalink: qsg-vapp.html 
+sidebar: sidebar 
+keywords: quick start guide, getting started, QSG, VMWare QSG, vApp QSG, quick installation 
+summary: Guide de démarrage rapide pour Unified Manager sur une plateforme VMware vSphere. 
+---
+= Instructions de démarrage rapide pour les installations VMware
+:allow-uri-read: 
+
+
+
+
+== Configuration minimale requise
+
+* Système d'exploitation : VMware ESXi 6.5, 6.7 et 7.0
+* RAM : 12 GO
+* CPU : 9572 MHz au total
+* Espace disque libre : 5 Go (provisionnement fin), 152 Go (provisionnement lourd)
+
+
+Pour plus de détails sur la configuration requise, reportez-vous à la section link:./install-vapp/concept-requirements-for-installing-unified-manager.html["Conditions requises pour l'installation de Unified Manager"] et link:http://mysupport.netapp.com/matrix["Matrice d'interopérabilité"].
+
+
+
+== Installation de Active IQ Unified Manager
+
+
+
+=== Téléchargez le programme d'installation
+
+. Téléchargez le `ActiveIQUnifiedManager-<version>.ova` package d'installation.
+. Enregistrez le fichier dans un répertoire local ou réseau accessible à votre client vSphere.
+
+
+
+
+=== Installez Unified Manager
+
+. Dans vSphere client, cliquez sur *fichier > déployer le modèle OVF*.
+. Localisez le fichier OVA et utilisez l'assistant pour déployer l'appliance virtuelle sur le serveur ESXi.
+. Sur la page Configuration réseau, dans l'onglet Propriétés, remplissez les champs requis pour le type d'installation que vous effectuez :
++
+** Pour la configuration statique, entrez les informations requises dans tous les champs. L'ajout d'informations pour le champ *DNS secondaire* n'est pas nécessaire.
+** Pour DHCP utilisant IPv4, n'ajoutez aucune information dans aucun champ.
+** Pour DHCP utilisant IPv6, cochez la case “Activer l’adressage IPv6 automatique”. N'ajoutez aucune information dans un autre champ.
+
+
+. Mise sous tension de la machine virtuelle
+. Cliquez sur l'onglet Console pour afficher le processus de démarrage initial.
+. Configurer le fuseau horaire.
+. Entrez un nom d'utilisateur et un mot de passe pour la maintenance Unified Manager.
+
+
+À la fin de l'installation, les informations de connexion à l'interface utilisateur Web de Unified Manager sont affichées.

@@ -1,0 +1,51 @@
+---
+permalink: online-help/task-specifying-the-destination-location-for-snapshot-backups.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vous configurez l"emplacement de destination des sauvegardes Snapshot Active IQ Unified Manager sur un volume que vous avez déjà configuré dans l"un de vos clusters ONTAP. Vous définissez l"emplacement depuis la console de maintenance Active IQ Unified Manager.' 
+---
+= Spécification de l'emplacement de destination des sauvegardes Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous configurez l'emplacement de destination des sauvegardes Snapshot Active IQ Unified Manager sur un volume que vous avez déjà configuré dans l'un de vos clusters ONTAP. Vous définissez l'emplacement depuis la console de maintenance Active IQ Unified Manager.
+
+
+
+== Avant de commencer
+
+* Vous devez disposer des informations d'identification utilisateur root pour l'hôte Linux sur lequel Active IQ Unified Manager est installé.
+* Vous devez disposer d'un ID utilisateur et d'un mot de passe autorisés pour vous connecter à la console de maintenance du serveur Unified Manager.
+* Vous devez disposer de l'adresse IP de gestion de cluster, du nom de la machine virtuelle de stockage, du nom du volume, ainsi que du nom d'utilisateur et du mot de passe du système de stockage.
+* Vous devez avoir monté le volume sur l'hôte Active IQ Unified Manager, et vous devez disposer du chemin de montage.
+
+
+
+
+== Étapes
+
+. Utilisez Secure Shell pour vous connecter à l'adresse IP ou au FQDN du système Active IQ Unified Manager.
+. Connectez-vous au système avec le nom et le mot de passe de l'utilisateur de maintenance (umadmin).
+. Saisissez la commande `maintenance_console` Puis appuyez sur entrée.
+. Dans la console de maintenance *Menu principal*, saisissez le numéro de l'option *Sauvegarder Restaurer*.
+. Entrez le numéro *configurer la sauvegarde NetApp Snapshot*.
+. Indiquez le nombre de configurations NFS.
+. Vérifiez les informations que vous devez fournir, puis saisissez le numéro de *entrer les détails de la configuration de sauvegarde*.
+. Pour identifier le volume sur lequel la copie Snapshot sera écrite, entrez l'adresse IP de l'interface de gestion du cluster, le nom du VM de stockage, le nom du volume, le nom de la LUN, le nom d'utilisateur et le mot de passe du système de stockage, ainsi que le chemin de montage.
+. Vérifiez ces informations et entrez `y`.
++
+Le système effectue les tâches suivantes :
+
++
+** Établit la connexion avec le cluster
+** Arrête tous les services
+** Crée un nouveau répertoire dans le volume et copie les fichiers de configuration de la base de données Active IQ Unified Manager
+** Supprime les fichiers de Active IQ Unified Manager et crée un lien symbolique vers le nouveau répertoire de base de données
+** Redémarre tous les services
+
+
+. Quittez la console de maintenance et lancez l'interface Active IQ Unified Manager pour créer le calendrier de sauvegarde Snapshot si ce n'est pas déjà fait.
+

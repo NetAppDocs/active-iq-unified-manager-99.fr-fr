@@ -1,0 +1,25 @@
+---
+permalink: reporting/task-filter-data.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Filtrez les données pour vous assurer que les résultats correspondent aux exigences de votre rapport. Le filtrage vous permet d"afficher uniquement les données qui vous intéressent.' 
+---
+= Filtrage des données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Filtrez les données pour vous assurer que les résultats correspondent aux exigences de votre rapport. Le filtrage vous permet d'afficher uniquement les données qui vous intéressent.
+
+
+
+== Étapes
+
+. Cliquez sur l'icône de filtre pour ajouter des filtres afin de cibler les résultats que vous souhaitez afficher, puis cliquez sur *appliquer le filtre*.
++
+image::../media/filter-cold-data-2.png[filtrer les données inactives 2]
+
+. Nommez la vue non enregistrée pour enregistrer vos modifications.
+

@@ -1,0 +1,66 @@
+---
+permalink: data-protection/task-creating-storage-virtual-machine-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"assistant Créer des Storage Virtual machine pairs permet aux applications de protection partenaires d"associer une machine virtuelle de stockage source à une machine virtuelle de stockage de destination à utiliser avec les relations SnapMirror et SnapVault. Les applications partenaires utilisent ces associations au moment du provisionnement initial des volumes de destination pour déterminer les ressources à sélectionner.' 
+---
+= Créer les pairs pour les machines virtuelles de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'assistant Créer des Storage Virtual machine pairs permet aux applications de protection partenaires d'associer une machine virtuelle de stockage source à une machine virtuelle de stockage de destination à utiliser avec les relations SnapMirror et SnapVault. Les applications partenaires utilisent ces associations au moment du provisionnement initial des volumes de destination pour déterminer les ressources à sélectionner.
+
+
+
+== Avant de commencer
+
+* La machine virtuelle de stockage que vous associez doit déjà exister.
+* Vous devez avoir le rôle Administrateur d'applications ou Administrateur de stockage.
+
+
+
+
+== Description de la tâche
+
+Selon le type de relation et d'ordinateur virtuel de stockage source, il n'est possible de choisir qu'une seule machine virtuelle de stockage de destination sur chaque cluster de destination.
+
+La modification d'associations à l'aide des fonctions DELETE et create n'affecte que les opérations de provisioning futures. Les volumes de destination existants ne sont pas déplacés.
+
+
+
+== Étapes
+
+. Dans le volet de navigation de gauche, cliquez sur *protection* > *Storage VM pairs*.
+. Dans la page *SVM pairs*, cliquez sur *Create*.
++
+L'assistant Créer des pairs de machine virtuelle de stockage est lancé.
+
+. Sélectionnez l'une des sources suivantes :
++
+** *Tout*
++
+Sélectionnez cette option si vous souhaitez créer une association entre une source de VM de stockage primaire et une ou plusieurs VM de stockage de destination. Cela signifie que toutes les machines virtuelles de stockage existantes qui nécessitent actuellement une protection, ainsi que toute machine virtuelle de stockage créée à l'avenir, sont associées à la machine virtuelle de stockage de destination spécifiée. Vous pouvez, par exemple, vouloir des applications issues de plusieurs sources situées à différents emplacements sauvegardés sur une ou plusieurs machines virtuelles de stockage de destination sur un emplacement unique.
+
+** *Unique*
++
+Sélectionnez cette option si vous souhaitez sélectionner une VM de stockage source spécifique associée à une ou plusieurs machines virtuelles de stockage de destination. Par exemple, si vous proposez des services de stockage à de nombreux clients dont les données doivent être séparées les uns des autres, sélectionnez cette option pour associer une source de VM de stockage à une destination de VM de stockage spécifique affectée uniquement à ce client.
+
+** *Aucun (externe)*
++
+Sélectionnez cette option lorsque vous souhaitez créer une association entre un VM de stockage source et un volume flexible externe d'une VM de stockage de destination.
+
+
+
+. Sélectionnez un ou les deux types de relations de protection que vous souhaitez créer :
++
+** *SnapMirror*
+** *SnapVault*
+
+
+. Cliquez sur *Suivant*.
+. Sélectionnez une ou plusieurs destinations de protection VM de stockage.
+. Cliquez sur *Terminer*.
+

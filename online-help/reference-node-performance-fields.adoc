@@ -1,0 +1,78 @@
+---
+permalink: online-help/reference-node-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les champs suivants sont disponibles dans la vue Performance : tous les nœuds et peuvent être utilisés dans les vues personnalisées et dans les rapports.' 
+---
+= Champs de performance des nœuds
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les champs suivants sont disponibles dans la vue Performance : tous les nœuds et peuvent être utilisés dans les vues personnalisées et dans les rapports.
+
+* *Statut*
++
+Un objet sain sans événements actifs affiche une icône de coche verte (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]). Si l'objet a un événement actif, l'icône d'indicateur d'événement identifie la gravité de l'événement : les événements critiques sont rouges (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), les événements d'erreur sont orange (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), et les événements d'avertissement sont jaunes (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]).
+
+* *Nœud*
++
+Nom du nœud. Vous pouvez cliquer sur le nom du nœud pour accéder à la page des informations sur les performances de ce nœud.
+
+* * Latence*
++
+Temps de réponse moyen pour toutes les requêtes d'E/S du nœud, exprimé en millisecondes par opération.
+
+* *IOPS*
++
+Les opérations moyennes d'entrée/sortie par seconde sur le nœud.
+
+* *MB/s*
++
+Le débit du nœud, mesuré en mégaoctets par seconde.
+
+* *Lectures Flash cache*
++
+Pourcentage des opérations de lecture sur le nœud satisfait par cache au lieu d'être renvoyées à partir du disque.
+
++
+[NOTE]
+====
+Les données de Flash cache s'affichent uniquement pour les nœuds et uniquement lorsqu'un module Flash cache est installé sur le nœud.
+
+====
+* *Capacité de performance utilisée*
++
+Pourcentage de capacité de performance consommé par le nœud.
+
+* *Utilisation*
++
+Indique si le processeur ou la mémoire du nœud est sur-utilisée.
+
+* *IOPS disponibles*
++
+Le nombre d'opérations d'entrée/sortie par seconde actuellement disponibles (gratuit) sur ce nœud pour des charges de travail supplémentaires.
+
+* *Capacité libre*
++
+Capacité de stockage inutilisée du nœud, en gigaoctets.
+
+* *Capacité totale*
++
+Capacité de stockage totale du nœud, en gigaoctets.
+
+* *Cluster*
++
+Cluster auquel appartient le nœud. Vous pouvez cliquer sur le nom du cluster pour accéder à la page des détails du cluster.
+
+* *FQDN du cluster*
++
+Nom de domaine complet (FQDN) du cluster.
+
+* *Politique de seuil*
++
+Règle de seuil de performances définie par l'utilisateur, ou règles actives sur cet objet de stockage Vous pouvez positionner votre curseur sur les noms de stratégie contenant des points de suspension (...) pour afficher le nom complet de la stratégie ou la liste des noms de stratégie affectés. Les boutons *affecter stratégie de seuil de performances* et *Effacer stratégie de seuil de performances* restent désactivés jusqu'à ce que vous sélectionniez un ou plusieurs objets en cliquant sur les cases situées à l'extrême gauche.
+
+

@@ -1,0 +1,257 @@
+---
+permalink: online-help/reference-aggregate-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les champs suivants sont disponibles dans la vue Santé : tous les agrégats et peuvent être utilisés dans des vues personnalisées et des rapports.' 
+---
+= Champs de santé agrégés
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les champs suivants sont disponibles dans la vue Santé : tous les agrégats et peuvent être utilisés dans des vues personnalisées et des rapports.
+
+* *Statut*
++
+Statut actuel de l'agrégat. Le statut peut être critique (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), erreur (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), Avertissement (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]) Ou Normal (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]).
+
+* *Agrégat*
++
+Nom de l'agrégat.
+
+* *État*
++
+L'état actuel de l'agrégat :
+
++
+** Hors ligne
++
+L'accès en lecture ou en écriture n'est pas autorisé.
+
+** En ligne
++
+L'accès en lecture et en écriture aux volumes hébergés sur cet agrégat est autorisé.
+
+** Limitée
++
+Les opérations limitées, telles que la reconstruction de parité, sont autorisées, mais l'accès aux données n'est pas autorisé.
+
+** Création
++
+L'agrégat est en cours de création.
+
+** Destruction
++
+L'agrégat est en cours de destruction.
+
+** Échec
++
+L'agrégat ne peut pas être mis en ligne.
+
+** Congelé
++
+L'agrégat ne transmet pas (temporairement) de demandes.
+
+** Incohérent
++
+L'agrégat a été marqué comme corrompu. Contactez le support technique.
+
+** Fer limité
++
+Les outils de diagnostic ne peuvent pas être exécutés sur l'agrégat.
+
+** Montage
++
+L'agrégat est en cours de montage.
+
+** Partiel
++
+Au moins un disque a été trouvé pour l'agrégat, mais deux ou plusieurs disques sont manquants.
+
+** Suspendu
++
+L'agrégat est suspendu.
+
+** Mise au repos
++
+L'agrégat est en cours de suspension.
+
+** Rétablie
++
+L'opération de restauration de l'agrégat est terminée.
+
+** Démonté
++
+L'agrégat est mis hors ligne.
+
+** Démontage
++
+L'agrégat est mis hors ligne.
+
+** Inconnu
++
+Spécifie que l'agrégat est découvert, mais que les informations d'agrégat ne sont pas encore récupérées par le serveur Unified Manager.
+
+
+
+* *Nœud*
++
+Nom du nœud qui contient l'agrégat.
+
+* *Statut miroir*
++
+L'état du miroir de l'agrégat :
+
++
+** Mis en miroir
++
+Les données plex agrégées sont mises en miroir.
+
+** Miroir dégradé
++
+Les données plex agrégées ne peuvent pas être mises en miroir.
+
+** Resynchronisation du rétroviseur
++
+Les données plex agrégées sont en cours de mise en miroir.
+
+** Échec
++
+La mise en miroir des données plex de l'agrégat a échoué.
+
+** Configuration non valide
++
+État initial avant la création d'un agrégat.
+
+** Non initialisé
++
+L'agrégat est en cours de création.
+
+** Non mis en miroir
++
+L'agrégat n'est pas mis en miroir.
+
+** Vérification du nombre de CP en cours
++
+L'agrégat a été intégré et Unified Manager valide que le nombre de CP pour les plexes est similaire.
+
+** Limbe
++
+Il y a un problème avec les libellés d'agrégats. Le système ONTAP identifie l'agrégat, mais ne peut pas l'assimiler précisément.
+
+** Nécessite une vérification du nombre de CP
++
+L'agrégat est assimilé, mais le nombre de CP sur les deux plexes n'est pas encore validé pour être similaire.
+
+
+
++
+Lorsqu'un agrégat est en état mirror_resynchronisant, le pourcentage de resynchronisation est également affiché.
+
+* * En transition*
++
+Indique si l'agrégat a terminé la transition ou non.
+
+* *Type*
++
+Le type d'agrégat :
+
++
+** DISQUES DURS
+** Hybride
++
+Combinaison de disques durs et de disques SSD, mais Flash Pool n'a pas été activé.
+
+** Hybride (Flash Pool)
++
+Combinaison de disques durs et de disques SSD et Flash Pool est activé.
+
+** SSD
+** SSD (FabricPool)
++
+Combinaison de SSD et d'un Tier cloud
+
+** HDD (FabricPool)
++
+Combinaison de disques durs et d'un Tier cloud
+
+** VMDisk (SDS)
++
+Disques virtuels au sein d'une machine virtuelle
+
+** Disque VMware (FabricPool)
++
+Combinaison de disques virtuels et d'un niveau cloud
+
+** LUN (FlexArray)
+
+
+* *Type SnapLock*
++
+Type SnapLock de l'agrégat. Les valeurs possibles sont Compliance, Enterprise, non SnapLock.
+
+* *Données utilisées %*
++
+Pourcentage d'espace utilisé pour les données dans l'agrégat.
+
+* *Données disponibles %*
++
+Le pourcentage d'espace disponible pour les données dans l'agrégat.
+
+* *Capacité de données utilisée*
++
+Quantité d'espace utilisé pour les données dans l'agrégat.
+
+* *Capacité de données disponible*
++
+Quantité d'espace disponible pour les données dans l'agrégat.
+
+* *Capacité de données totale*
++
+La taille totale des données de l'agrégat.
+
+* *Capacité engagée*
++
+L'espace total validé pour l'ensemble des volumes de l'agrégat.
+
++
+Lorsque la croissance automatique est activée sur les volumes qui résident sur l'agrégat, la capacité validée est basée sur la taille maximale du volume définie par Autogrow, et non sur la taille du volume initial. Pour les agrégats FabricPool, cette valeur s'applique uniquement au niveau local ou de performance, et à la capacité. La quantité d'espace disponible dans le Tier cloud n'est pas reflétée dans cette valeur.
+
+* *Espace logique utilisé*
++
+La taille réelle des données stockées dans l'agrégat sans appliquer les économies obtenues grâce aux technologies d'efficacité du stockage de ONTAP.
+
+* * Gain de place*
++
+Le rapport d'efficacité du stockage basé sur l'espace logique total utilisé pour stocker les données et l'espace physique total nécessaire pour le stockage des données sans les technologies d'efficacité du stockage ONTAP.
+
++
+Ce champ n'est renseigné que pour les agrégats non racines.
+
+* *Espace de Tier de cloud utilisé*
++
+L'espace utilisé dans le Tier cloud, si l'agrégat est un agrégat FabricPool.
+
+* *Type RAID*
++
+Le type de configuration RAID :
+
++
+** RAID 0 : tous les groupes RAID sont de type RAID 0.
+** RAID 4 : tous les groupes RAID sont de type RAID 4.
+** RAID-DP : tous les groupes RAID sont de type RAID-DP.
+** RAID-TEC : tous les RAID groupes sont de type RAID-TEC.
+** RAID mixte : l'agrégat contient des groupes RAID de différents types (RAID 0, RAID 4, RAID-DP et RAID-TEC).
+
+
+* *Cluster*
++
+Nom du cluster sur lequel réside l'agrégat. Vous pouvez cliquer sur le nom du cluster pour accéder à la page d'informations sur l'état de santé du cluster.
+
+* *FQDN du cluster*
++
+Nom de domaine complet (FQDN) du cluster.
+
+

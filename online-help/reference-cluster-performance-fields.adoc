@@ -1,0 +1,70 @@
+---
+permalink: online-help/reference-cluster-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Les champs suivants sont disponibles dans la vue Performance : tous les clusters et peuvent être utilisés dans les vues personnalisées et dans les rapports.' 
+---
+= Champs de performance du cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les champs suivants sont disponibles dans la vue Performance : tous les clusters et peuvent être utilisés dans les vues personnalisées et dans les rapports.
+
+* *Statut*
++
+Un objet sain sans événements actifs affiche une icône de coche verte (image:../media/sev-normal-um60.png["Icône de gravité d'événement – normale"]). Si l'objet a un événement actif, l'icône d'indicateur d'événement identifie la gravité de l'événement : les événements critiques sont rouges (image:../media/sev-critical-um60.png["Icône de gravité de l'événement – critique"]), les événements d'erreur sont orange (image:../media/sev-error-um60.png["Icône de gravité de l'événement – erreur"]), et les événements d'avertissement sont jaunes (image:../media/sev-warning-um60.png["Icône de gravité d'événement – avertissement"]).
+
+* *Cluster*
++
+Nom du cluster. Vous pouvez cliquer sur le nom du cluster pour accéder à la page des informations détaillées sur les performances du cluster.
+
+* *FQDN du cluster*
++
+Nom de domaine complet (FQDN) du cluster.
+
+* *IOPS*
++
+Les opérations d'entrée/sortie par seconde sur le cluster.
+
+* *MB/s*
++
+Le débit sur le cluster se mesure en mégaoctets par seconde.
+
+* *Capacité libre*
++
+La capacité de stockage inutilisée de ce cluster, en gigaoctets.
+
+* *Capacité totale*
++
+Capacité de stockage totale pour ce cluster, en gigaoctets.
+
+* *Nombre de nœuds*
++
+Nombre de nœuds dans le cluster. Vous pouvez cliquer sur le chiffre pour accéder à la vue performances : tous les nœuds.
+
+* *Nom d'hôte ou adresse IP*
++
+Le nom d'hôte ou l'adresse IP (IPv4 ou IPv6) de la LIF de gestion du cluster.
+
+* *N° de série*
++
+Le numéro d'identification unique du cluster.
+
+* *Version OS*
++
+Version du logiciel ONTAP installée sur le cluster.
+
++
+[NOTE]
+====
+Si différentes versions du logiciel ONTAP sont installées sur les nœuds du cluster, le numéro de version le plus faible est indiqué. Vous pouvez afficher la version de ONTAP installée sur chaque nœud depuis la vue Performance : tous les nœuds.
+
+====
+* *Politique de seuil*
++
+Règle de seuil de performances définie par l'utilisateur, ou règles actives sur cet objet de stockage Vous pouvez positionner votre curseur sur les noms de stratégie contenant des points de suspension (...) pour afficher le nom complet de la stratégie ou la liste des noms de stratégie affectés. Les boutons *affecter stratégie de seuil de performances* et *Effacer stratégie de seuil de performances* restent désactivés jusqu'à ce que vous sélectionniez un ou plusieurs objets en cliquant sur les cases situées à l'extrême gauche.
+
+
