@@ -10,8 +10,6 @@ entries:
   - title: Interfaces Unified Manager utilisées pour gérer les performances du système
       de stockage
     url: "/performance-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-performance.html"
-  - title: Documentation des produits Active IQ Unified Manager
-    url: "/performance-checker/reference-oncommand-unified-manager-product-documentation.html"
   - title: Activité de collecte des données sur la configuration et les performances
       du cluster
     url: "/performance-checker/concept-cluster-configuration-and-performance-data-collection-activity.html"

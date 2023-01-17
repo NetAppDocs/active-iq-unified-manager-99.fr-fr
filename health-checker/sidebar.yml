@@ -10,8 +10,6 @@ entries:
   - title: Les interfaces Unified Manager utilisées pour gérer l'état du système de
       stockage
     url: "/health-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-health.html"
-  - title: Documentation des produits Active IQ Unified Manager
-    url: "/health-checker/reference-oncommand-unified-manager-product-documentation.html"
 - title: Tâches et workflows d'état de Unified Manager communs
   url: "/health-checker/concept-common-unified-manager-administrative-workflows-and-tasks.html"
   entries:
