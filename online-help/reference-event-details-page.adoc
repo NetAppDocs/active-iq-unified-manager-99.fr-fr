@@ -32,7 +32,7 @@ Dans certains cas, une raison pour l'événement déclenché est fournie dans la
 Pour les événements de performances dynamiques, cette section affiche les icônes qui représentent les composants logiques et physiques du cluster. Si un composant est en conflit, son icône est entourée et mise en surbrillance rouge.
 
 +
-Voir link:concept-cluster-components-and-why-they-can-be-in-contention.adoc["Les composants du cluster et les conflits"] pour une description des composants affichés ici.
+Voir xref:concept-cluster-components-and-why-they-can-be-in-contention.adoc[Les composants du cluster et les conflits] pour une description des composants affichés ici.
 
 
 

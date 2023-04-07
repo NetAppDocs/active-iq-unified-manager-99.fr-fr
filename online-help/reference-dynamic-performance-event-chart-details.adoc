@@ -22,7 +22,7 @@ Les graphiques latence et activité affichent les noms des principales charges d
 Lorsque vous triez par écart de latence en fonction des pics, les workloads définis par système ne s'affichent pas dans le tableau, car la latence s'applique uniquement aux workloads définis par l'utilisateur. Les charges de travail avec des valeurs de latence très faibles ne sont pas affichées dans le tableau.
 
 ====
-Pour plus d'informations sur les seuils de performances dynamiques, reportez-vous à la section link:reference-performance-event-analysis-and-notification.adoc["Que sont les événements"]. Pour plus d'informations sur le classement des charges de travail par Unified Manager et sur l'ordre de tri, reportez-vous à la section xref:concept-how-unified-manager-determines-the-performance-impact-for-an-incident.adoc[Comment Unified Manager détermine l'impact sur les performances d'un événement].
+Pour plus d'informations sur les seuils de performances dynamiques, reportez-vous à la section xref:reference-performance-event-analysis-and-notification.adoc[Que sont les événements]. Pour plus d'informations sur le classement des charges de travail par Unified Manager et sur l'ordre de tri, reportez-vous à la section xref:concept-how-unified-manager-determines-the-performance-impact-for-an-incident.adoc[Comment Unified Manager détermine l'impact sur les performances d'un événement].
 
 Les données des graphiques montrent 24 heures de statistiques de performance avant la dernière analyse de l'événement. Les valeurs réelles et les valeurs attendues pour chaque charge de travail sont basées sur le temps pendant lequel la charge de travail a été impliquée dans l'événement. Par exemple, une charge de travail peut impliquer un événement après la détection de l'événement. Ses statistiques de performances peuvent donc ne pas correspondre aux valeurs lors de la détection d'événement. Par défaut, les workloads sont triés par écart de latence maximal (le plus élevé).
 
@@ -39,7 +39,7 @@ Affiche l'impact de l'événement sur la latence de la charge de travail au cour
 
 ** *Colonne utilisation des composants*
 +
-Affiche des détails sur l'utilisation de la charge de travail du composant de cluster dans les conflits. Dans les graphiques, l'utilisation réelle est une ligne bleue. Une barre rouge met en évidence la durée de l'événement, de l'heure de détection à la dernière heure analysée. Pour plus d'informations, voir link:reference-workload-performance-measurement-values.adoc["Les mesures des performances des workloads"].
+Affiche des détails sur l'utilisation de la charge de travail du composant de cluster dans les conflits. Dans les graphiques, l'utilisation réelle est une ligne bleue. Une barre rouge met en évidence la durée de l'événement, de l'heure de détection à la dernière heure analysée. Pour plus d'informations, voir xref:reference-workload-performance-measurement-values.adoc[Les mesures des performances des workloads].
 
 +
 [NOTE]

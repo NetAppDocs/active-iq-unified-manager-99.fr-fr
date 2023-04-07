@@ -15,9 +15,6 @@ Vous pouvez utiliser la page de détails Volume / Santé pour afficher des infor
 
 Vous devez avoir le rôle Administrateur d'applications ou Administrateur de stockage.
 
-* <<reference-health-volume-details-page,Volet groupes associés>>
-
-
 
 
 == Boutons de commande

@@ -8,6 +8,9 @@ summary: Guide de démarrage rapide pour Unified Manager sur une plateforme VMwa
 :allow-uri-read: 
 
 
+[role="lead"]
+Vous pouvez télécharger le `.tar` fichier contenant un certificat racine, a `README` fichier et un `OVA` Et déployez Unified Manager en tant qu'appliance virtuelle.
+
 
 
 == Configuration minimale requise

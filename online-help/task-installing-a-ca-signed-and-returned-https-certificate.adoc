@@ -44,7 +44,7 @@ Si la validité du certificat pour lequel une RSC a été créée est supérieur
 . Dans la boîte de dialogue qui s'affiche, cliquez sur *choisir le fichier...* pour localiser le fichier à télécharger.
 . Sélectionnez le fichier, puis cliquez sur *installer* pour l'installer.
 +
-link:concept-installing-a-https-certificate-generated-using-external-tools.dita["concept-installation-a-https-certificat-généré-à-l'aide-externes-tools.dita"]
+Pour plus d'informations, reportez-vous à la section link:concept-installing-a-https-certificate-generated-using-external-tools.html["Installation d'un certificat HTTPS généré à l'aide d'outils externes"]
 
 
 

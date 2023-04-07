@@ -10,8 +10,7 @@ summary:
 :imagesdir: ../media/
 
 
-* *Numéro*
-+
+[role="lead"]
 Lorsque vous effectuez une opération liée à l'authentification, telle que l'ajout, la modification, la suppression ou le test d'utilisateurs ou de groupes distants, le message d'erreur suivant peut s'afficher : `Unknown authentication error`.
 
 * *Cause*

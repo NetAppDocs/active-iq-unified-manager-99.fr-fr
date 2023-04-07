@@ -10,8 +10,7 @@ summary:
 :imagesdir: ../media/
 
 
-* *Numéro*
-+
+[role="lead"]
 Lorsque vous sélectionnez autres comme service d'authentification, l'utilisateur et le groupe ObjectClass conservent les valeurs du modèle précédemment sélectionné. Si le serveur LDAP n'utilise pas les mêmes valeurs, l'opération risque d'échouer.
 
 * *Cause*
