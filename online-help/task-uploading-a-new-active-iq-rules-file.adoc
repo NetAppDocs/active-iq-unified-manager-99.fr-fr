@@ -25,7 +25,7 @@ Unified Manager recherche automatiquement un nouveau fichier de règles Active I
 
 == Description de la tâche
 
-Il est recommandé de télécharger un nouveau fichier de règles environ une fois par mois pour assurer la protection de vos systèmes de stockage et leur fonctionnement optimal. Le fichier de règles se trouve à l'adresse suivante : http://mysupport.netapp.com/NOW/public/unified_manager/bin/secure_rules.zip[]
+Il est recommandé de télécharger un nouveau fichier de règles environ une fois par mois pour assurer la protection de vos systèmes de stockage et leur fonctionnement optimal. Le fichier de règles se trouve à l'adresse suivante : http://[]
 
 
 

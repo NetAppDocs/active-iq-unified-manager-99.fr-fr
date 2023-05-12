@@ -15,4 +15,4 @@ Unified Manager vous permet d'afficher les groupes de règles de qualité de ser
 
 Pour plus d'informations sur le réglage des paramètres QoS, reportez-vous au _ONTAP 9 Performance Monitoring Power Guide_.
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html["Guide d'alimentation du contrôle des performances ONTAP 9"]
+http://["Guide d'alimentation du contrôle des performances ONTAP 9"]

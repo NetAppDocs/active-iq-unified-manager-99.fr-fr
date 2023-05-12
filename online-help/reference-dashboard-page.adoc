@@ -53,7 +53,7 @@ Ce volet affiche le nombre total de charges de travail conformes et non conforme
 
 * *Panneau de sécurité*
 +
-Lors de l'affichage de tous les clusters, ce panneau affiche le nombre de clusters conformes et non conformes, le nombre de machines virtuelles de stockage conformes et non conformes, ainsi que le nombre de volumes chiffrés et non chiffrés. La conformité dépend du http://www.netapp.com/us/media/tr-4569.pdf["Guide NetApp sur le renforcement de la sécurité des environnements ONTAP 9"]. Cliquez sur la flèche droite en haut du panneau pour afficher les détails de sécurité de tous les clusters de la page sécurité.
+Lors de l'affichage de tous les clusters, ce panneau affiche le nombre de clusters conformes et non conformes, le nombre de machines virtuelles de stockage conformes et non conformes, ainsi que le nombre de volumes chiffrés et non chiffrés. La conformité dépend du http://["Guide NetApp sur le renforcement de la sécurité des environnements ONTAP 9"]. Cliquez sur la flèche droite en haut du panneau pour afficher les détails de sécurité de tous les clusters de la page sécurité.
 
 +
 Lors de l'affichage d'un cluster unique, ce panneau indique si le cluster est conforme ou non, le nombre de machines virtuelles de stockage conformes et non conformes, ainsi que le nombre de volumes chiffrés et non chiffrés. Cliquez sur la flèche droite en haut du panneau pour afficher les détails de sécurité du cluster dans la page sécurité.

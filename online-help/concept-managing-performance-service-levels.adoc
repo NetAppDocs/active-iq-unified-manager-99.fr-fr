@@ -103,7 +103,7 @@ Nombre de charges de travail de stockage qui ont reçu la PSL.
 |===
 Pour plus d'informations sur la manière dont les pics d'IOPS et les IOPS attendues contribuent à optimiser et de manière cohérente les performances des clusters ONTAP, consultez l'article de la base de connaissances suivant :
 
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/Active_IQ_Unified_Manager/What_is_Performance_Budgeting%3F["Qu'est-ce que la budgétisation des performances ?"]
+https://["Qu'est-ce que la budgétisation des performances ?"]
 
 Si des charges de travail dépassent la valeur de latence prévue pour 30 % de la durée de l'heure précédente, Unified Manager génère l'un des événements suivants pour vous informer d'un problème de performance potentiel : « Seuil de latence du volume de la charge de travail dépassé, tel que défini par la politique de niveau de service de performances » ou « seuil de latence du LUN de la charge de travail violé tel que défini par la politique de niveau de services de performances ». Vous pouvez analyser la charge de travail pour voir ce qui peut être à l'origine des valeurs de latence plus élevées.
 

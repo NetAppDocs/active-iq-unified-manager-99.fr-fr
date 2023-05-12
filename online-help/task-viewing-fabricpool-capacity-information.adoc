@@ -85,4 +85,4 @@ L'affichage indique le nom de la règle de hiérarchisation FabricPool attribué
 
 Pour plus d'informations sur les agrégats FabricPool, consultez le _guide d'alimentation des disques et des agrégats ONTAP 9_.
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html["Guide d'alimentation des agrégats et disques ONTAP 9"]
+http://["Guide d'alimentation des agrégats et disques ONTAP 9"]

@@ -13107,4 +13107,5 @@
   <block id="a745c95b049f8f0921c2fcc8baec42c6" category="paragraph">Après cette modification, les utilisateurs doivent inclure le nouveau numéro de port dans l'URL pour accéder à l'interface utilisateur Web d'Unified Manager, par exemple +https://host.company.com:1234+, +https://12.13.14.15:1122+ ou +https://[2001:db8:0:1]:2123+.</block>
   <block id="74eaa85433946affb1737b2598fcdd35" category="paragraph">Vous pouvez télécharger le pack d'installation et installer Unified Manager pour surveiller et résoudre les problèmes de capacité, de disponibilité, de performances et de protection du stockage des données.</block>
   <block id="d37bfa9087091a2643ebb8f003e74798" category="paragraph">Vous pouvez télécharger le pack d'installation et installer Unified Manager sur une plateforme Red Hat Enterprise Linux ou CentOS physique ou virtuelle.</block>
+  <block id="c2c8552adcdf172b368e6fec79ced7cb" category="list-text">Lancez PowerShell ou l'invite de commande en tant qu'administrateur Windows.</block>
 </blocks>

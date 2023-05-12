@@ -29,7 +29,7 @@ Le fichier d'installation est un `OVA` Fichier qui contient le logiciel Unified 
 
 == Étapes
 
-. Connectez-vous au site de support NetApp et accédez à la page *Download* pour Unified Manager : https://mysupport.netapp.com/site/products/all/details/activeiq-unified-manager/downloads-tab["Site de support NetApp"]
+. Connectez-vous au site de support NetApp et accédez à la page *Download* pour Unified Manager : https://["Site de support NetApp"]
 . Sélectionnez la version requise de Unified Manager et acceptez le contrat de licence utilisateur final (CLUF).
 . Téléchargez et enregistrez `OVA` Fichier pour l'installation de VMware vSphere dans un répertoire local ou un répertoire réseau accessible à votre client vSphere.
 . Vérifiez la somme de contrôle pour vous assurer que le logiciel a été correctement téléchargé.

@@ -24,7 +24,7 @@ Avant d'exécuter les étapes du workflow, assurez-vous que :
 
 xref:concept-gateway-apis.adoc[Accès aux API ONTAP via un accès proxy]
 
-* Vous connaissez l'utilisation des API REST de ONTAP. Pour plus d'informations sur l'utilisation des API REST de ONTAP, reportez-vous à la section https://docs.netapp.com/us-en/ontap-automation/index.html["Documentation sur l'automatisation ONTAP"].
+* Vous connaissez l'utilisation des API REST de ONTAP. Pour plus d'informations sur l'utilisation des API REST de ONTAP, reportez-vous à la section https://["Documentation sur l'automatisation ONTAP"].
 * Vous êtes administrateur d'applications.
 * Le cluster sur lequel vous souhaitez exécuter les opérations d'API REST est pris en charge par ONTAP 9.5 ou version ultérieure et le cluster est ajouté à Unified Manager via HTTPS.
 
